@@ -97,11 +97,10 @@ i {
 .blog-navigation {
   margin-bottom: 30px;
   padding: 20px;
-
   background-color: rgba(68, 112, 196, 0.7);
   border: 5px solid #2d508f;
-
-  color: #ffffff;
+  color: white;
+  text-align: center;
 }
 
 .blog-navigation h2 {
@@ -114,11 +113,32 @@ i {
 }
 
 .blog-navigation li {
-  margin-bottom: 5px;
+  margin-bottom: 16px;
+  background-color: #fdd90dc9;
+  border-radius: 10px;
 }
 
 .blog-navigation a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.effect-3 a {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: bold; 
+}
+
+.effect-3 a::before {
+  position: absolute;
   color: #ffffff;
+  content: attr(data-hover);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.effect-3 a:hover::before {
+  opacity: 0;
+  transform: scale(0.9);
 }
 
 .skills dd {
