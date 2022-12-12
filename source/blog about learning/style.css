@@ -19,6 +19,12 @@ h2 {
   line-height: normal;
 }
 
+.main-blog {
+  font-size: 30px;
+  line-height: normal;
+  background-color: #030361;
+}
+
 aside {
   margin: 20px 0;
   color: #c4c4c4;
@@ -94,13 +100,26 @@ i {
   text-align: center;
 }
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  min-width: 700px;
+}
+
+.main-blog-navigation {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 700px;
+}
+
 .blog-navigation {
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(68, 112, 196, 0.7);
   border: 5px solid #2d508f;
   color: white;
   text-align: center;
+  width: max-content;
 }
 
 .blog-navigation h2 {
