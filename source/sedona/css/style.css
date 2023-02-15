@@ -27,9 +27,23 @@
 }
 
 .page {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
   color: #333333;
+  background-color: #E5E5E5;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
+  background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .button {
@@ -54,12 +68,17 @@
 }
 
 .header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
 }
 
 .logo {
 }
 
 .site-menu {
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -84,14 +103,27 @@
 }
 
 .page-main {
+  flex-grow: 1;
 }
+
+.main-promo {
+  min-height: 485px;
+  background-color: #81B3D3;
+  background-image: url("../img/background/bg-promo.jpg");
+}
+
 .advantages {
+  text-align: center;
 }
+
 .title-section {
 }
 .description-section {
 }
+
 .advantage-list {
+  margin: 0;
+  padding: 0;
 }
 
 .advantage-list-inner{
@@ -136,14 +168,14 @@
 .advantage-image {
 }
 
-
-
 .searsh {
+  text-align: center;
 }
 
 .section-title {
   color: #000000;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
@@ -153,6 +185,7 @@
 .searsh-button {
 }
 .subscribe {
+  text-align: center;
 }
 
 .subscribe-primary .section-title {
@@ -187,12 +220,21 @@
 
 .subscribe-button {
 }
+
 .page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 72px;
 }
+
 .page-footer-social {
+  margin: 0;
 }
+
 .social {
+  padding: 0;
 }
+
 .social-item {
 }
 .social-link {
@@ -223,7 +265,7 @@
 
 .main-heading {
   font-size: 60px;
-  font-weight: 700;
+  line-height: 78px;
 }
 
 .breadcrumbs {
@@ -265,6 +307,19 @@
   font-family: inherit;
   font-size: 18px;
 }
+
+.range-title {
+  opacity: 0.3;
+}
+
+.range-input {
+  color: #ffffff;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+
 
 
 
