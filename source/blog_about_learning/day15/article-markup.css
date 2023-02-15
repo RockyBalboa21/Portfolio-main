@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0 150px;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background: #ffffff url("../img/bg-page.png") no-repeat top center;
+  }
+  
+  .page-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: "Verdana", sans-serif;
+    text-align: center;
+  }
+
+  .blog-navigation {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(68, 112, 196, 0.7);
+    border: 5px solid #2d508f;
+    color: white;
+    text-align: center;
+    width: max-content;
+  }
+
+  .blog-navigation a[href] {
+    color: white;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .markup {
+    flex: 1 1 auto;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgb(172, 250, 224);
+    border: rgba(68, 112, 196, 0.7) solid 1px;
+  }
+
+  .travel_gallery {
+    flex: 1 1 auto;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgb(172, 250, 224);
+    border: rgba(68, 112, 196, 0.7) solid 1px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gallery img {
+    margin: 3px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  
+  .pagination a {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  }
+
+  a[href] {
+    color: #0099ef;
+    text-decoration-line: underline;
+  }
+
+  .pagination a:last-child {
+    margin-right: 0;
+  }
+  
+  .pagination {
+    text-align: center;
+  }
+
+  .partnership {
+    margin: 30px 0;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4a87fa;
+    background-image: url("../source/blog about learning/img/bg-partnership.svg");
+  }
+
+  footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    color: #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+  }

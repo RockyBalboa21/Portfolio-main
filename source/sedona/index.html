@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sedona</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+<!-- начало шапки главной страницы сайта -->
+    <header class="page-header">
+      <nav class="header-nav">
+<!-- + добавить картинку логотипа и адрес ссылки после импорта графики из фигмы и оптимизации изображений по форматам, указать alt, ширину и высоту из фигмы -->
+        <a class="logo">
+          <img src="./img/logo-sedona.svg" alt="Логотип сайта Седона" width="139" height="70">
+        </a>
+
+<!-- добавить адреса в список ссылок шапки навигации -->
+        <ul class="site-menu">
+          <li class="site-menu-item site-menu-item-active">
+            <a class="site-menu-link">Главная</a>
+          </li>
+          <li class="site-menu-item">
+            <a class="site-menu-link" href="#">О Седоне</a>
+          </li>
+          <li class="site-menu-item">
+            <a class="site-menu-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+
+<!-- добавить адреса в ссылки меню пользователя-->
+        <div class="additional-menu">
+           <a class="icon-button" href="#">
+            <span class="visually-hidden">Поиск</span>
+           </a>
+           <a class="icon-button" href="#">
+            <span class="visually-hidden">Избранное</span>
+            <span class="icon-button-counter">12</span>
+           </a>
+           <a class="button button-secondary" href="#">Хочу сюда!</a>
+        </div>
+      </nav>
+    </header>
+<!-- конец шапки главной страницы сайта -->
+
+<!-- НАЧАЛО Главная страница основное содержание-->
+    <main class="page-main">
+      <h1 class="visually-hidden">Туристический город Седона</h1>
+
+<!-- начало секция с преимуществами  -->
+      <section class="advantages">
+        <h2 class="visually-hidden">Перимущества города Седона</h2>
+        <p class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="section-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+
+<!-- начало списка преимуществ -->
+        <ol class="advantage-list">
+          <li class="advantage-item advantage-item-large">
+            <h3 class="advantage-title">Настоящий городок</h3>
+            <p class="advantage-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+
+<!-- + добавить адрес фото в картинку после импорта графики из фигмы и оптимизации изображений по форматам, указать alt, ширину и высоту из фигмы-->
+            <img class="advantage-image" src="./img/content/sedona-city.jpg" width="800" height="384" alt="Фото города Седоны с заведениями" >
+
+<!-- начало списка советов -->
+            <ul class="advantage-list advantage-list-inner">
+              <li class="advantage-item">
+                <h4 class="advantage-title">Жильё</h4>
+                <p class="advantage-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="advantage-item">
+                <h4 class="advantage-title">Еда</h4>
+                <p class="advantage-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="advantage-item">
+                <h4 class="advantage-title">Сувениры</h4>
+                <p class="advantage-text">Не только китайского, но и настоящего местного производства!</p>
+              </li>
+            </ul>
+<!-- конец списка советов -->
+          </li>
+          <li class="advantage-item advantage-item-large">
+            <h3 class="advantage-title">Там есть мост дьявола</h3>
+            <p class="advantage-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+
+<!-- +добавить адрес фото в картинку после импорта графики из фигмы и оптимизации изображений по форматам, указать alt, ширину и высоту из фигмы-->
+            <img class="advantage-image" src="./img/content/devil-bridge.jpg" width="800" height="384" alt="Фото моста дьявола: природный каменный мост между скалами" >
+          </li>
+          <li class="advantage-item">
+            <h3 class="advantage-title">Небольшая площадь</h3>
+            <p class="advantage-text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantage-item">
+            <h3 class="advantage-title">Красивая дорога</h3>
+            <p class="advantage-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantage-item">
+            <h3 class="advantage-title">Мало туристов</h3>
+            <p class="advantage-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ol>
+      </section>
+<!-- конец секция с преимуществами -->
+
+<!-- начало секции поиска отеля -->
+      <section class="searsh">
+        <h2 class="visually-hidden">Поиск отеля</h2>
+        <p class="section-title">Заинтересовались?</p>
+        <p class="section-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+<!-- добавить адрес ссылки поиска отеля  -->
+        <a class="searsh-button button button-secondary button-large" href="#">Поиск гостиницы в седоне</a>
+      </section>
+<!-- конец секции поиска отеля -->
+
+<!-- начало секции подписаться на рассылку -->
+      <section class="subscribe subscribe-primary">
+        <h2 class="section-title">Подпишитесь на рассылку</h2>
+        <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="subscribe-field field">
+            <span class="visually-hidden">Ваш e-mail</span>
+            <input class="field-input" type="email" name="email" placeholder="Ваш e-mail">
+          </label>
+          <button class="subscribe-button button" type="submit">Подписаться</button>
+        </form>
+      </section>
+<!-- конец секции подписаться на рассылку -->
+    </main>
+<!-- КОНЕЦ Главная страница основное содержание-->
+
+<!-- начало подвал главной страницы -->
+    <footer class="page-footer">
+      <ul class="page-footer-social social">
+        <li class="social-item">
+          <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+            <span class="vsually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://www.facebook.com/htmlacademy">
+            <span class="vsually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://www.youtube.com/c/htmlacademyRUS">
+            <span class="vsually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+
+      <a href="+78128121212" class="footer-phone">+7 (812) 812-12-12</a>
+
+      <a class="footer-dev" href="https://htmlacademy.ru">
+<!-- +добавить адрес фото в картинку после импорта графики из фигмы и оптимизации изображений по форматам, указать alt, ширину и высоту из фигмы -->
+        <img class="dev" src="./img/logo-htmlacademy.svg" width="115" height="34" alt="Разработано htmlacademy">
+      </a>
+    </footer>
+<!-- конец подвала главной страницы -->
+  </body>
+</html>

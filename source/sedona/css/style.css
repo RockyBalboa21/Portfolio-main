@@ -1,0 +1,272 @@
+/*
+фоновые изображения главной страницы и фильтра в каталоге подключаются после:
+1. импорта графики из figma
+2. оптимизации изображений
+3. добавления в структуре проекта отдельной папки для графики image
+
+создаём файл style.css в папке css
+и подключаем его через link rel="stylesheet" href="./css/style.css"
+в index.html
+*/
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+}
+
+.page {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #83b3d3;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-secondary {
+  background-color: #756257;
+}
+
+.button-large {
+  font-size: 20px;
+}
+
+.page-header {
+}
+
+.header-nav {
+}
+
+.logo {
+}
+
+.site-menu {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.site-menu-item {
+}
+.site-menu-item-active {
+}
+
+.site-menu-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+.icon-button {
+}
+.visually-hidden {
+}
+.icon-button-counter {
+}
+
+.page-main {
+}
+.advantages {
+}
+.title-section {
+}
+.description-section {
+}
+.advantage-list {
+}
+
+.advantage-list-inner{
+  color: #333333;
+  background: #ffffff;
+}
+
+.advantage-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item:not(.advantage-item-large):nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-item-large {
+  color: #FFFFFF;
+  background: #83B3D3;
+}
+
+.advantage-list-inner .advantage-item:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.advantage-title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+
+}
+
+.advantage-item-large > .advantage-title {
+  color: #ffffff;
+}
+
+.advantage-text {
+  line-height: 21px;
+}
+
+.advantage-image {
+}
+
+
+
+.searsh {
+}
+
+.section-title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.section-text {
+}
+.searsh-button {
+}
+.subscribe {
+}
+
+.subscribe-primary .section-title {
+  color: #ffffff;
+}
+
+.subscribe-primary {
+  color: #ffffff;
+  background-color: #83B3D3;
+  background-image: url("../img/background/bg-subscribe.jpg");
+  background-size: cover;
+}
+
+
+.section-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-form {
+}
+.subscribe-field {
+}
+.field {
+}
+
+.field-input {
+  font-family: inherit;
+  font-size: 18px;
+  background-color: #F2F2F2;
+}
+
+.subscribe-button {
+}
+.page-footer {
+}
+.page-footer-social {
+}
+.social {
+}
+.social-item {
+}
+.social-link {
+}
+.vsually-hidden {
+}
+
+.footer-phone {
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.footer-dev {
+}
+.dev {
+}
+
+
+/* Гостиницы каталог */
+.main-header {
+  color: #ffffff;
+  background-color: #83b3d3;
+  background-image: url("../img/background/catalog-bg.jpg");
+  background-size: cover;
+}
+
+.main-heading {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.card-rate {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background: #83B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.filter-reset {
+  color: #ffffff;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+
+
+
+

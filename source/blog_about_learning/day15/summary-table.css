@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0 150px;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background: #ffffff url("../img/bg-page.png") no-repeat top center;
+  }
+
+  .page-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: "Verdana", sans-serif;
+    text-align: center;
+  }
+  
+  .blog-navigation {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(68, 112, 196, 0.7);
+    border: 5px solid #2d508f;
+    color: white;
+    text-align: center;
+    width: max-content;
+  }
+
+  .blog-navigation a[href] {
+    color: white;
+  }
+  
+  article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .table_one {
+    padding-top: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: normal;
+  }
+  
+  aside {
+    margin: 20px 0;
+    color: #c4c4c4;
+  }
+  
+  a[href] {
+    color: #0099ef;
+    text-decoration-line: underline;
+  }
+  
+  figure {
+    width: 350px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  figure table {
+    vertical-align: middle;
+    border: 8px solid rgb(202, 224, 248);
+  }
+
+  figcaption {
+    width: 350px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(202, 224, 248);
+  }
+  
+  .pagination a {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  }
+
+  .pagination a:last-child {
+    margin-right: 0;
+  }
+  
+  .pagination {
+    text-align: center;
+  }
+
+  .simple_table {
+    border-collapse: collapse;
+    border: 2px solid lightgray;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px;
+    border-spacing: 5px;
+  }
+  
+  .simple_table_caption {
+    caption-side: bottom;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .simple_table_date {
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
+  
+  .simple_table_head {
+    padding: 10px;
+    border: 2px solid black;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;  
+  }
+  
+  .col-1 {
+   text-align: left;
+  }
+  
+  .col-2 {
+   text-align: center;
+  }
+  
+  .col-3 {
+   text-align: right;
+  }
+  
+  .row-heading {
+   background-color: darkcyan; 
+   color: white;
+  }
+  
+  .cell-highlight {
+    background-color: lightblue;
+  }
+  
+  th, td {
+   padding: 10px;
+  }
+  
+  td { 
+   border: 1px solid lightgray;
+  }
+  
+  th {
+   width: 33%;
+   border-bottom: 2px solid black;
+   border-top: 2px solid black;
+  }
+  
+  .row-highlight {
+    background-color: lightyellow;
+  }
+
+  .partnership {
+    margin: 30px 0;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4a87fa;
+    background-image: url("/source/blog about learning/img/bg-partnership.svg");
+  }
+
+  footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    color: #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+  }
