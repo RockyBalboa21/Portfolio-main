@@ -1,5 +1,5 @@
 # Portfolio
 
-This repository contains a collection of projects collected by me
+This repository contains a collection of projects created by me
 
 All news here
