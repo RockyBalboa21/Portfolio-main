@@ -9,17 +9,17 @@
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <!-- начало шапки главной страницы сайта -->
     <header class="page-header">
-      <nav class="header-navigation">
+      <nav class="header-nav">
   <!-- +добавить адрес фото в картинку после импорта графики из фигмы и оптимизации изображений по форматам, указать alt, ширину и высоту из фигмы-->
         <a href="index.html" class="logo">
           <img src="./img/logo-sedona.svg" alt="Логотип сайта Седона" width="139" height="70">
         </a>
 
   <!-- добавить адреса в список ссылок шапки навигации -->
-        <ul class="navigation-list">
+        <ul class="site-menu">
           <li class="site-menu-item">
             <a class="site-menu-link" href="index.html">Главная</a>
           </li>
@@ -31,8 +31,8 @@
           </li>
         </ul>
 
-  <!-- добавить адреса в ссылки меню пользователя-->
-        <div class="menu-user">
+      <!-- добавить адреса в ссылки меню пользователя-->
+        <div class="additional-menu">
           <a class="icon-button" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
@@ -116,7 +116,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-fieldset">
+            <fieldset class="filter-fieldset filter-fieldset-price">
               <legend class="filter-title">Стоимость, ₽:</legend>
     <!-- выбор стоимости -->
               <div class="range">
@@ -154,48 +154,51 @@
   <!-- начало секции каталог -->
       <section class="catalog">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <p class="section-title">Найдено гостиниц: 38</p>
 
-        <h3 class="visually-hidden">Сортировка и отображение</h3>
+        <div class="catalog-sort">
+          <p class="section-title catalog-title">Найдено гостиниц: 38</p>
 
-  <!-- сортировка - меню выбора из выпадающего списка -->
-        <details class="select">
-          <summary class="select-button">Сначала дешёвые</summary>
+          <h3 class="visually-hidden" hidden>Сортировка и отображение</h3>
 
-          <ul class="select-menu">
-            <li class="select-item select-item-active">
-              <a class="select-option">Сначала дешёвые</a>
+    <!-- сортировка - меню выбора из выпадающего списка -->
+          <details class="select catalog-select">
+            <summary class="select-button">Сначала дешёвые</summary>
+
+            <ul class="select-menu">
+              <li class="select-item select-item-active">
+                <a class="select-option">Сначала дешёвые</a>
+              </li>
+              <li class="select-item">
+                <a class="select-option"  href="#">Сначала дорогие</a>
+              </li>
+              <li class="select-item">
+                <a class="select-option"  href="#">Сначала популярные</a>
+              </li>
+              <li class="select-item">
+                <a class="select-option"  href="#">Сначала комфортные</a>
+              </li>
+            </ul>
+          </details>
+
+    <!-- отоборажение - меню выбора вида просмотра окна -->
+          <ul class="view">
+            <li class="view-item view-item-active">
+              <a class="view-link">
+                <span class="visually-hidden">Карточками</span>
+              </a>
             </li>
-            <li class="select-item">
-              <a class="select-option"  href="#">Сначала дорогие</a>
+            <li class="view-item">
+              <a class="view-link" href="#">
+                <span class="visually-hidden">Слайдами</span>
+              </a>
             </li>
-            <li class="select-item">
-              <a class="select-option"  href="#">Сначала популярные</a>
-            </li>
-            <li class="select-item">
-              <a class="select-option"  href="#">Сначала комфортные</a>
+            <li class="view-item">
+              <a class="view-link" href="#">
+                <span class="visually-hidden">Списком</span>
+              </a>
             </li>
           </ul>
-        </details>
-
-  <!-- отоборажение - меню выбора вида просмотра окна -->
-        <ul class="view">
-          <li class="view-item view-item-active">
-            <a class="view-link">
-              <span class="visually-hidden">Карточками</span>
-            </a>
-          </li>
-          <li class="view-item">
-            <a class="view-link" href="#">
-              <span class="visually-hidden">Слайдами</span>
-            </a>
-          </li>
-          <li class="view-item">
-            <a class="view-link" href="#">
-              <span class="visually-hidden">Списком</span>
-            </a>
-          </li>
-        </ul>
+        </div>
 
   <!-- список карточек гостиниц -->
         <h3 class="visually-hidden">Список гостиниц</h3>
@@ -293,52 +296,54 @@
         </article>
   <!-- пагинация список страниц -->
         <div class="pagination">
-          <button class="button" type="button">Загрузить ещё</button>
+          <button class="button button-large" type="button">Загрузить ещё</button>
 
-          <h3 class="visually-hidden">Список страниц</h3>
-          <ul class="pagination-list">
-            <li class="pagination-item pagination-item-active">
-              <a class="pagination-link">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
+          <div class="pagination-nav">
+            <h3 class="visually-hidden" hidden>Список страниц</h3>
+            <ul class="pagination-list">
+              <li class="pagination-item pagination-item-active">
+                <a class="pagination-link">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
 
-  <!-- выбор количества гостиниц на странице с помощью выпадающего списка -->
-          <div class="pagination-select">
-            <p class="pagination-select-title">Гостиниц на странице:</p>
+    <!-- выбор количества гостиниц на странице с помощью выпадающего списка -->
+            <div class="pagination-select">
+              <p class="pagination-select-title">Гостиниц на странице:</p>
 
-            <details class="select">
-              <summary class="select-button">4</summary>
+              <details class="select">
+                <summary class="select-button">4</summary>
 
-              <ul class="select-menu">
-                <li class="select-item select-item-active">
-                  <a class="select-option" href="#">5</a>
-                </li>
-                <li class="select-item">
-                  <a class="select-option" href="#">6</a>
-                </li>
-                <li class="select-item">
-                  <a class="select-option" href="#">9</a>
-                </li>
-                <li class="select-item">
-                  <a class="select-option" href="#">12</a>
-                </li>
-              </ul>
-            </details>
+                <ul class="select-menu">
+                  <li class="select-item select-item-active">
+                    <a class="select-option" href="#">5</a>
+                  </li>
+                  <li class="select-item">
+                    <a class="select-option" href="#">6</a>
+                  </li>
+                  <li class="select-item">
+                    <a class="select-option" href="#">9</a>
+                  </li>
+                  <li class="select-item">
+                    <a class="select-option" href="#">12</a>
+                  </li>
+                </ul>
+              </details>
+            </div>
           </div>
         </div>
       </section>
