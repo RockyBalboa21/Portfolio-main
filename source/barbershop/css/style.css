@@ -83,6 +83,11 @@
  .button-current {
    color: #242424;
    background-color: #FFFFFF;
+   border: 2px solid rgba(239, 51, 255);
+ }
+
+ .button-black {
+   border: 2px solid rgba(239, 51, 255);
  }
  
  /* Pages */
@@ -128,13 +133,14 @@
  }
  
  .navigation-user {
-   max-width: 250px;
+   max-width: 210px;
    margin-left: auto;
  }
  
  .navigation-user .navigation-link {
    min-width: 16px;
    min-height: 22px;
+   border: 2px solid rgba(239, 51, 255);
  }
  
  .main-container {
@@ -300,6 +306,31 @@
  .appointment {
    width: 430px;
  }
+
+ .appointment-form {
+  display: grid;
+  grid-template-columns: 114px 74px 208px;
+  gap: 20px;
+}
+
+.field-group {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+ }
+
+ .appointment-form  .info {
+   display: none;
+ } 
+ 
+.appointment-form-name {
+   grid-column: 1 / -1;
+ }
+
+ .appointment-submit {
+   grid-column: 1 / -1;
+   justify-self: start;
+ }
  
  /* Title */
  .appointment-title {
@@ -414,12 +445,17 @@
    height: 44px;
    margin-right: 8px;
    margin-bottom: 8px;
+   outline: 2px solid rgba(239, 51, 255);
  }
  
  .footer-social-item:nth-child(3n) {
    margin-right: 0;
  }
- 
+
+ .inner-header {
+   margin-bottom: 32px;
+ }
+
  .inner-header-title {
    margin-top: 0;
    margin-bottom: 16px;
@@ -440,6 +476,7 @@
  /* Link */
  .breadcrumbs-link {
    color: inherit;
+   margin-right: 32px;
  }
  
  .catalog-products {
@@ -487,22 +524,47 @@
  }
  
  .product-list {
+   display: grid;
+   grid-template-columns: repeat(3, 220px);
    list-style-type: none;
    margin: 0;
+   margin-bottom: 24px;
    padding: 0;
+   gap: 20px;
  }
  
  /* Item */
  .product-card {
    background-color: #FFFFFF;
+   display: grid;
+   grid-template-rows: 200px min-content auto min-content 16px;
+   grid-template-columns: 16px 188px 16px; 
  }
  
+ /* Image */
+
+.product-card-image-link {
+  grid-column: 1 / -1;
+  background-color: #f6f6f6;
+}
+
  /* Link */
  .product-card-link {
    text-decoration: none;
  }
  
+.product-card-title-link,
+.product-card-price,
+.product-card-button {
+  grid-column: 2 / 3;
+}
+
  /* Title */
+.product-card-title-link {
+  margin-top: 16px;
+  margin-bottom: 8px;
+} 
+
  .product-card-title {
    font-weight: 700;
    color: #242424;
@@ -515,6 +577,7 @@
    font-weight: 700;
    color: #814B18;
    text-transform: uppercase;
+   margin-bottom: 16px; 
  }
  
  /* Pagination */
