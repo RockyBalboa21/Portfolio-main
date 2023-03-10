@@ -52,6 +52,11 @@
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -69,10 +74,19 @@
 }
 
 .header-nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 30px;
+  min-height: 65px;
   padding: 0 70px;
 }
+
+.logo {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -5px;
+}
+
 
 .site-menu {
   flex-grow: 1;
@@ -105,6 +119,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
+  max-width: 322px;
 }
 
 .icon-button{
@@ -117,7 +133,7 @@
 .icon-button-counter {
 }
 
-.additional-menu-button{
+.additional-menu-button {
   display: block;
   width: 160px;
   padding: 7px 15px;
@@ -128,8 +144,9 @@
 }
 
 .page-footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 30px;
   padding: 30px 72px;
   background-color: #FFFFFF;
 }
@@ -143,6 +160,10 @@
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+}
+
+.footer-dev {
+  justify-self: end;
 }
 
 .main-promo {
@@ -166,6 +187,9 @@
 }
 
 .section-title {
+  margin: 0;
+  margin-bottom: 30px;
+
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -174,11 +198,13 @@
 }
 
 .section-description {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
 }
 
 .button {
+  display: inline-block;
   color: #ffffff;
   background-color: #83B3D3;
   font-family: inherit;
@@ -196,7 +222,20 @@
   font-size: 20px;
 }
 
+.range {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.range-field {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+}
+
 .range-input {
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
   color: #ffffff;
   background-color: transparent;
   font-family: inherit;
@@ -204,25 +243,39 @@
 }
 
 .range-title {
+  grid-column: -2 / -1;
+  grid-row: 1 / 2;
   opacity: 0.3;
+}
+
+.range-slider {
+  grid-column: 1 / -1;
 }
 
 .advantages {
   text-align: center;
 }
 
+.advantages-content {
+  padding: 62px 240px 80px;
+}
+
 .advantage-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .advantage-list-inner{
+  grid-column: 1 / -1;
   color: #333333;
   background: #ffffff;
 }
 
 .advantage-item {
+  padding: 60px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -231,6 +284,11 @@
 }
 
 .advantage-item-large {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1 / -1;
+  padding: 0;
+
   color: #ffffff;
   background: #83B3D3;
 }
@@ -247,27 +305,44 @@
   text-transform: uppercase;
 }
 
-.advantage-item-large > .advantage-title {
+.advantage-description .advantage-title {
   color: #ffffff;
+}
+
+.advantage-image {
+  grid-column: span 2;
+  width: 100%;
+  height: 0;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.advantage-item-large:nth-child(2) .advantage-image {
+  order: -1;
+}
+
+.advantage-description {
+  padding: 60px;
 }
 
 .advantage-text {
   line-height: 21px;
 }
 
-.advantage-image {
-}
-
 .searsh {
+  padding: 90px 240px;
   text-align: center;
 }
 
 .section-text {
 }
+
 .searsh-button {
+  margin-top: 56px;
 }
 
 .subscribe {
+  padding: 94px 200px;
   text-align: center;
 }
 
@@ -283,13 +358,18 @@
 }
 
 .subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  margin-top: 48px;
 }
+
 .subscribe-field {
 }
 .field {
 }
 
 .field-input {
+  width: 100%;
   font-family: inherit;
   font-size: 18px;
   background-color: #f2f2f2;
@@ -301,13 +381,15 @@
 .social {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -2px;
   padding: 0;
   list-style-type: none;
 }
 
 .social-item {
-  margin: 0 2px;
+  margin: 2px;
 }
+
 .social-link {
   display: block;
   width: 40px;
@@ -324,9 +406,48 @@
   font-size: 16px;
 }
 
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+  row-gap: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 26px 1fr;
+  grid-template-rows: 206px;
+  grid-template-areas:
+    "image image image"
+    "title title title"
+    "description description description"
+    "button-more . button-chosen"
+    "stars rate rate";
+  row-gap: 16px;
+  padding: 20px;
+}
+
+.card-img {
+  order: -1;
+  width: 100%;
+  height: 100%;
+  grid-area: image;
+  object-fit: cover;
+}
+
 .card-title {
+  grid-area: title;
+  margin: 0;
   font-size: 24px;
   line-height: 31px;
+}
+
+.card-description {
+  grid-column: description;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+  margin: 0;
 }
 
 .card-link {
@@ -334,13 +455,26 @@
   text-decoration: none;
 }
 
+.card-more {
+  grid-area: button-more;
+}
+
+.card-chosen {
+  grid-area: button-chosen;
+}
+
 .card-rate {
+  grid-area: rate;
+  margin: 0;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .filter-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 200px 200px 1fr 223px;
+  justify-content: space-between;
+  gap: 17px;
 }
 
 .filter-title {
@@ -350,15 +484,12 @@
 }
 
 .filter-fieldset {
-  width: 200px;
   margin: 0;
-  margin-right: 17px;
   padding: 0;
 }
 
 .filter-fieldset-price {
-  width: 287px;
-  margin-left: 95px;
+  margin-left: 96px;
 }
 
 .filter-list {
@@ -370,8 +501,7 @@
 .filter-buttons{
   display: flex;
   flex-direction: column;
-  width: 160px;
-  margin-left: 64px;
+  margin-left: 80px;
 }
 
 .filter-reset {
@@ -387,28 +517,28 @@
 }
 
 .catalog-sort {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 287px max-content;
+  gap: 80px;
   padding: 44px 0;
 }
 
 .catalog-title {
-  width: 50%;
   margin: 0;
-}
-
-.catalog-select {
-  width: 287px;
-  margin-right: auto;
 }
 
 .view {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
+  justify-content: flex-end;
+  max-width: 224px;
+  margin: -4px;
   padding: 0;
+  list-style-type: none;
+}
+
+.view-item {
+  margin: 4px;
 }
 
 .view-link{
@@ -419,10 +549,18 @@
 }
 
 .pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px 0;
 }
 
+.pagination-button {
+  min-width: 620px;
+}
+
 .pagination-nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -461,7 +599,7 @@
 
 .select-label{
   margin: 0;
-  margin-right: 51px;
+  margin-right: 50px;
 }
 
 
