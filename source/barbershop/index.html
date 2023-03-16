@@ -23,16 +23,27 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm-.665 5.249a6.5 6.5 0 111.414-1.414l3.958 3.958-1.414 1.414-3.958-3.958z" />
+              </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09 6L3.577.905 3.662 0h8.676l.086.905L12.909 6h2.724l-.14 1.124-1 8-.11.876H1.617l-.11-.876-1-8L.368 6H3.09zM5.1 6h5.8l-.38-4H5.48L5.1 6zm-1.717 8l-.75-6h10.734l-.75 6H3.383zM8.5 9.5v3h2v-3h-2zm-3 3v-3h2v3h-2z" />
+              </svg>
               <span class="visually-hidden">Корзина</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход</a>
+            <a class="navigation-link navigation-link-login" href="#">
+              <svg class="navigation-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2h5v12H9v2h7V0H9v2zM4.293 3.707L7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414z" fill="#BDBDBD" />
+              </svg>
+              Вход
+            </a>
           </li>
         </ul>
       </nav>
@@ -72,19 +83,19 @@
             <h2 class="services-title">Популярные услуги</h2>
             <ul class="services-list">
               <li class="services-item">
-                <span class="services-name">Стрижка машинкой</span>
+                Стрижка машинкой
                 <b class="services-price">800 ₽</b>
               </li>
               <li class="services-item">
-                <span class="services-name">Стрижка усов </span>
+                Стрижка усов 
                 <b class="services-price">1200 ₽</b>
               </li>
               <li class="services-item">
-                <span class="services-name">Груминг</span>
+                Груминг
                 <b class="services-price">400 ₽</b>
               </li>
               <li class="services-item">
-                <span class="services-name">Комплексная стрижка</span>
+                Комплексная стрижка
                 <b class="services-price">2300 ₽</b>
               </li>
             </ul>
@@ -143,46 +154,50 @@
               <li >пн—пт: с 10:00 до 22:00</li>
               <li >сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="button" href="#">Как проехать</a>
-            <a class="button button-feedback" href="#">Обратная связь</a>
+            <p class="contacts-navigation">
+              <a class="button" href="#">Как проехать</a>
+              <a class="button button-feedback" href="#">Обратная связь</a>
+            </p>
           </section>
 
           <!-- Форма записи -->
           <section class="appointment">
             <h2 class="appointment-title">Записаться</h2>
-            <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>    
+            <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-               <p class="field-group appointment-form-date">
-                 <label class="form-label" for="appointment-date">
-                   Дата
-                   <button class="info">
-                     <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
-                 </label>
-                 <input type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
-               </p>
-               <p class="field-group appointment-form-time">
-                 <label class="form-label" for="appointment-time">
-                   Время
-                   <button class="info">
-                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                   </button>
-                 </label>
-                 <input type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
-               </p>
-               <p class="field-group appointment-form-phone">
-                 <label class="form-label" for="appointment-phone">
-                   Телефон
-                 </label>
-                 <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
-               </p>
-               <p class="field-group appointment-form-name">
-                 <label class="form-label" for="appointment-name">
-                   Ваше имя
-                 </label>
-                 <input class="field" type="text" id="appointment-name" name="appointment-name">
-               </p>
-               <button class="button appointment-submit" type="submit">Записаться</button>
-             </form>
+              <p class="field-group appointment-form-date">
+                <span class="form-label form-label-icon">
+                  <label for="appointment-date">
+                    Дата</label>
+                  <button class="info" type="button">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+                </span>
+                <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
+              </p>
+              <p class="field-group appointment-form-time">
+                <span class="form-label form-label-icon">
+                  <label for="appointment-time">
+                    Время</label>
+                  <button class="info" type="button">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  </button>
+                </span>
+                <input class="field" type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
+              </p>
+              <p class="field-group appointment-form-phone">
+                <label class="form-label" for="appointment-phone">
+                  Телефон
+                </label>
+                <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
+              </p>
+              <p class="field-group appointment-form-name">
+                <label class="form-label" for="appointment-name">
+                  Ваше имя
+                </label>
+                <input class="field" type="text" id="appointment-name" name="appointment-name">
+              </p>
+              <button class="button appointment-submit" type="submit">Записаться</button>
+            </form>
           </section>
         </div>
       </div>
@@ -195,7 +210,7 @@
           <h2 class="visually-hidden">Контакты</h2>
           <img class="footer-contacts-logo" src="images/logo-footer.svg" alt="Логотип Барбершоп «Бородинский»" width="187" height="24">
           <address class="footer-contacts-address">
-            <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="footer-about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </address>
           <a class="footer-contacts-map-link" href="#">Как нас найти?</a>
@@ -216,22 +231,22 @@
           <h2 class="page-footer-title">Давайте дружить</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
+          <a class="footer-social-link footer-social-tw" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link footer-social-vk" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link footer-social-instagram" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
           </ul>
-          <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+      <p>Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
         </section>
       </div>
     </footer>
