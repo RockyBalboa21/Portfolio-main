@@ -1,4 +1,4 @@
-body {
+.page {
     margin: 0;
     min-width: 960px;
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
@@ -61,31 +61,46 @@ body {
     font-size: 88px;
     line-height: 96px;
     font-weight: 400;
+    text-shadow: -3px 2px 5px #ea9825;
+    letter-spacing: 9px;
   }
-  
-  .hero-image p {
-    margin: 0;
-    font-size: 32px;
-    line-height: 48px;
-  }
+
+  .dev {
+   position: fixed;
+   top: 5px;
+   left: 20px;
+   margin: 10px auto;
+   font-size: 22px;
+   line-height: 36px;
+   width: 140px;
+   text-align: center;
+   border: 4px solid #333333;
+   border-radius: 10px;
+   text-shadow:
+      -1px -1px 1px #1e181c,
+      2px 1px 1px #52424d;
+   cursor: none;
+}
   
   .intro {
     margin: 0 0 120px;
   }
   
   .subheading {
-    margin: 0;
-    padding: 0;
+    margin-top: 30px;
+    padding-top: 30px;
     font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 64px;
     line-height: 80px;
     font-weight: 400;
     text-align: center;
+    text-shadow:
+      2px 2px #e5d4c0,
+      4px 4px rgba(0, 0, 0, 0.2);
   }
 
   .me {
     margin: 0;
-    padding: 0;
     text-align:center;
     padding: 6px 20px;
     display: display-box;
@@ -142,7 +157,6 @@ body {
 
   .my-daughter {
     margin: 0;
-    padding: 0;
     padding: 6px 20px;
     display: display-box;
     vertical-align: baseline;
@@ -258,3 +272,101 @@ body {
     padding-left: 25px;
     background-image: url("img/icon-phone-footer.svg");
   }
+
+  .theme-button {
+   position: relative;
+   margin-top: 20px;
+   padding-top: 7px;
+   padding-right: 16px;
+   padding-bottom: 7px;
+   padding-left: 16px;
+   font-size: 12px;
+   border-radius: 2px;
+   background-color: transparent;
+   cursor: pointer;
+   color:#288be6;
+   border: 1px solid #288be6;;
+ }
+ 
+ .theme-button:active {
+   opacity: 0.8;
+ }
+ 
+ .theme-button:focus,
+ .theme-button:hover {
+   color: #ffffff;
+   background-color: #06539a;;
+ }
+ .theme-button:focus {
+   outline-color: #b6aaff;
+ }
+
+
+ /* Тёмная тема */
+
+ .dark-theme {
+   color: #f2f2f2;
+   background-color: #17161a;
+ }
+ 
+ .dark-theme .page-header{
+   background-color: #3f3c53;
+   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+ }
+
+ .dark-theme {
+    background-image: url("img/hero-bg-dark-basik.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+ 
+ .dark-theme a {
+   color: #9484f2;
+ }
+ 
+ .dark-theme .theme-button {
+   color: #9484f2;
+   border: 1px solid #9484f2;
+ }
+ 
+ .dark-theme .theme-button:focus,
+ .dark-theme .theme-button:hover {
+   color: #17161a;
+   background-color: #9484f2;
+ }
+ 
+ .dark-theme .status p {
+   background-color: #2a2930;
+ }
+ 
+ .dark-theme .page-footer {
+   background-color: #373540;
+   color: #f2f2f2;
+ }
+
+ .dark-theme .button {
+   margin: 0 auto;
+   background-color: #2f08f0;
+   color:  #9484f2;
+ }
+
+ .dark-theme .header-email {
+   padding-left: 30px;
+   background-image: url("/themes/basic-dark-theme/basic-dark-theme/img/icon-email.svg");
+ }
+
+ .dark-theme .header-phone {
+   padding-left: 25px;
+   background-image: url("/themes/basic-dark-theme/basic-dark-theme/img/icon-phone.svg");
+ }
+
+ .dark-theme .footer-email {
+   padding-left: 30px;
+   background-image: url("/themes/basic-dark-theme/basic-dark-theme/img/icon-email.svg");
+ }
+ 
+ .dark-theme .footer-phone {
+   padding-left: 25px;
+   background-image: url("/themes/basic-dark-theme/basic-dark-theme/img/icon-phone.svg");
+ }
