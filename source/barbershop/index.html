@@ -36,6 +36,37 @@
               </svg>
               <span class="visually-hidden">Корзина</span>
             </a>
+            <div class="popover popover-cart">
+              <button class="popover-close-button button button-light">
+                2
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <div class="popover-content">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <p class="cart-item-title">Стрижка машинкой</p>
+                      <p class="cart-item-price">800 ₽</p>
+                      <button type="button" class="cart-item-button button">
+                        <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <p class="cart-item-title">Стрижка усов</p>
+                      <p class="cart-item-price">1200 ₽</p>
+                      <button class="cart-item-button button" type="button">
+                        <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-login" href="#">
@@ -55,7 +86,7 @@
         <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 
         <!-- Лого -->
-        <img class="logo" src="images/logo-full.svg" width="367" height="152" alt="Барбершоп «Бородинский»">
+        <img class="logo" src="images/logo-full.svg" width="361" height="152" alt="Барбершоп «Бородинский»">
 
         <!-- Преимущества -->
         <section class="advantages">
@@ -67,7 +98,7 @@
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Круто</h3>
-              <p class="advantages-description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+              <p class="advantages-description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! <br>Во всяком случае внешне.</p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Дорого</h3>
@@ -83,20 +114,16 @@
             <h2 class="services-title">Популярные услуги</h2>
             <ul class="services-list">
               <li class="services-item">
-                Стрижка машинкой
-                <b class="services-price">800 ₽</b>
+                Стрижка машинкой <b class="services-price">800 ₽</b>
               </li>
               <li class="services-item">
-                Стрижка усов 
-                <b class="services-price">1200 ₽</b>
+                Стрижка усов <b class="services-price">1200 ₽</b>
               </li>
               <li class="services-item">
-                Груминг
-                <b class="services-price">400 ₽</b>
+                Груминг <b class="services-price">400 ₽</b>
               </li>
               <li class="services-item">
-                Комплексная стрижка
-                <b class="services-price">2300 ₽</b>
+                Комплексная стрижка <b class="services-price">2300 ₽</b>
               </li>
             </ul>
             <a class="button button-all" href="#">Посмотреть все</a>
@@ -106,36 +133,42 @@
           <section class="gallery">
             <h2 class="gallery-title">Фотогалерея</h2>
 
-            <img class="slider-image" src="images/gallery-1.jpg" alt="Примеры работ" width="390" height="250">
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
+            <div class="slider">
+              <div class="slider-wrapper">
+                <img class="slider-image" src="images/gallery-1.jpg" alt="Примеры работ" width="390" height="250">
+                <div class="slider-controls">
+                  <button class="slider-button slider-next" type="button">
+                    <span class="visually-hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="slider-button slider-prev" type="button">
+                    <span class="visually-hidden">Следующее фото</span>
+                  </button>
+                </div>
 
-            <ol class="slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                  <span class="visually-hidden">1 фото</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">2 фото</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 фото</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">4 фото</span>
-                </button>
-              </li>
-            </ol>
+                <ol class="slider-pagination">
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                      <span class="visually-hidden">1 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">4 фото</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
+            </div>
           </section>
         </div>
 
@@ -151,8 +184,8 @@
             </address>
             <h3 class="contacts-subtitle">Время работы</h3>
             <ul class="contacts-schedule">
-              <li >пн—пт: с 10:00 до 22:00</li>
-              <li >сб—вс: с 10:00 до 19:00</li>
+              <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+              <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
             <p class="contacts-navigation">
               <a class="button" href="#">Как проехать</a>
@@ -188,7 +221,7 @@
                 <label class="form-label" for="appointment-phone">
                   Телефон
                 </label>
-                <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
+                <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00" required>
               </p>
               <p class="field-group appointment-form-name">
                 <label class="form-label" for="appointment-name">
@@ -208,7 +241,7 @@
       <div class="page-footer-container">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <img class="footer-contacts-logo" src="images/logo-footer.svg" alt="Логотип Барбершоп «Бородинский»" width="187" height="24">
+          <img class="footer-contacts-logo" src="images/logo-footer.svg" width="183" height="21" alt="Логотип Барбершоп «Бородинский»">
           <address class="footer-contacts-address">
             <p class="footer-about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -231,24 +264,55 @@
           <h2 class="page-footer-title">Давайте дружить</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-          <a class="footer-social-link footer-social-tw" href="#">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="footer-social-link footer-social-vk" href="#">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="footer-social-link footer-social-instagram" href="#">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
+              <a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-instagram" href="https://www.instagram.com/htmlacademy">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
           </ul>
-      <p>Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+          <p>Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
         </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Личный кабинет</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-login">Логин</label>
+              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин" required>
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-password">Логин</label>
+              <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль" required>
+            </p>
+            <p class="field-group auth-form-user-options">
+              <label class="auth-form-checkbox control">
+                <input class="visually-hidden control-input" type="checkbox" name="firm-storе" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Запомнить меня</span>
+              </label>
+              <a class="auth-form-recovery" href="#">Забыл пароль</a>
+            </p>
+            <button class="button auth-form-button" type="submit">Войти</button>
+            <a class="button auth-form-register" href="#">Регистрация</a>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
