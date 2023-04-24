@@ -2,7 +2,7 @@
    font-family: "PT Sans";
    font-style: normal;
    font-weight: 400;
-   src: url("fonts/pt-sans-regular.woff2") format("woff2");
+   src: url("../fonts/PTSans-Regular.woff2") format("woff2");
    font-display: swap;
  }
  
@@ -10,7 +10,7 @@
    font-family: "PT Sans";
    font-style: normal;
    font-weight: 700;
-   src: url("fonts/pt-sans-bold.woff2") format("woff2");
+   src: url("../fonts/PTSans-Bold.woff2") format("woff2");
    font-display: swap;
  }
  
@@ -18,14 +18,14 @@
    font-family: "PT Sans";
    font-style: italic;
    font-weight: 400;
-   src: url("fonts/pt-sans-italic.woff2") format("woff2");
+   src: url("../fonts/PTSans-Italic.woff2") format("woff2");
  }
  
  @font-face {
    font-family: "PT Sans";
    font-style: italic;
    font-weight: 700;
-   src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+   src: url("../fonts/PTSans-BoldItalic.woff2") format("woff2");
    font-display: swap;
  }
  
@@ -34,7 +34,7 @@
    font-family: "PT Sans Narrow";
    font-style: normal;
    font-weight: 700;
-   src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
+   src: url("../fonts//PTSans-NarrowBold.woff2") format("woff2");
    font-display: swap;
  }
  
@@ -100,7 +100,7 @@
  .button-all,
  .button-next {
    padding-right: 44px;
-   background-image: url("images/arrow-right.svg");
+   background-image: url("../images/arrow-right.svg");
    background-repeat: no-repeat;
    background-size: 16px 16px;
    background-position: center right 20px;
@@ -276,16 +276,16 @@
  .main-index {
    color: #ffffff;
    background-color: #000000;
-   background-image: url("images/index-bg.jpg");
+   background-image: url("../images/index-bg.jpg");
    background-size: 100% auto;
    background-repeat: no-repeat;
  }
  
  .main-inner {
-   padding-top: 40px;
+   padding-top: 38px;
    color: #242424;
    background-color: #fbf7f4;
-   background-image: url("images/bg-noisy.png");
+   background-image: url("../images/bg-noisy.png");
  }
  
  .page-container {
@@ -352,7 +352,7 @@
    padding: 40px;
    color: #242424;
    background-color: #FBF7F4;
-   background-image: url("images/bg-noisy.png");
+   background-image: url("../images/bg-noisy.png");
    position: relative;
  }
  
@@ -469,7 +469,7 @@
    background-color: #000000;
    border: none;
    cursor: pointer;
-   background-image: url("images/arrow.svg");
+   background-image: url("../images/arrow-left.svg");
    background-position: center;
    background-repeat: no-repeat;
  }
@@ -654,7 +654,7 @@
    padding: 0;
    background-color: transparent;
    border: none;
-   background-image: url("images/info.svg");
+   background-image: url("../images/info.svg");
    background-repeat: no-repeat;
    background-position: center;
  }
@@ -711,7 +711,7 @@
    font-weight: 700;
    color: #ffffff;
    background-color: #242424;
-   background-image: url("images/bg-noisy.png");
+   background-image: url("../images/bg-noisy.png");
    background-repeat: repeat;
  }
  
@@ -805,7 +805,7 @@
  .newsletter-button {
    width: 56px;
    height: 44px;
-   background-image: url("images/arrow-tail-right.svg");
+   background-image: url("../images/arrow-tail-right.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: 16px 16px;
@@ -848,15 +848,15 @@
  }
  
  .footer-social-tw {
-   background-image: url("images/social-tw.svg");
+   background-image: url("../images/twitter.svg");
  }
  
  .footer-social-vk {
-   background-image: url("images/social-vk.svg");
+   background-image: url("../images/vk.svg");
  }
  
  .footer-social-instagram {
-   background-image: url("images/social-instagram.svg");
+   background-image: url("../images/instagram.svg");
  }
  
  .footer-social p {
@@ -873,8 +873,9 @@
    background-color: rgba(0, 0, 0, 0.8);
  }
  
+ /*Отображение модального окна */
  .modal-container-close {
-   display: none;
+    display: none; 
  }
  
  .modal {
@@ -896,7 +897,7 @@
    height: 44px;
    background-color: #ffffff;
    border: none;
-   background-image: url("images/close.svg"); /* TODO проверить на винде и если там есть пофиксить */
+   background-image: url("../images/cross.svg"); /* TODO проверить на винде и если там есть пофиксить */
    background-repeat: no-repeat;
    background-position: center;
  }
@@ -957,7 +958,6 @@
    font-size: 32px;
    line-height: 35px;
    text-transform: uppercase;
- 
    font-family: "PT Sans Narrow", sans-serif;
  }
  
@@ -1134,14 +1134,11 @@
  .control-input:active ~ .control-mark {
    border-color: #AF7842;
  }
- 
- 
- 
+  
  .control:hover .control-mark{
    border-color: #814b18;
  }
- 
- 
+  
  .control-input:disabled + .control-mark {
    border-color: #242424;
  }
@@ -1181,8 +1178,6 @@
    border-radius: 50%;
    content: "";
  }
- 
- 
  
  /* Label */
  .control-label {
@@ -1232,7 +1227,7 @@
    font-weight: 700;
    background-color: #ffffff;
    border: 2px solid #242424;
-   background-image: url("images/select-arrow.svg");
+   background-image: url("../images/arrow-down.svg");
    background-repeat: no-repeat;
    background-position: right 16px center;
    appearance: none;
@@ -1417,7 +1412,7 @@
  }
  
  .pagination-prev {
-   background-image: url("images/arrow-left.svg");
+   background-image: url("../images/arrow-left.svg");
    background-position: 20px center;
    background-size: 16px 16px;
    background-repeat: no-repeat;
@@ -1426,7 +1421,7 @@
  }
  
  .pagination-next {
-   background-image: url("images/arrow-right.svg");
+   background-image: url("../images/arrow-right.svg");
    background-position: 20px center;
    background-size: 16px 16px;
    background-repeat: no-repeat;
@@ -1440,9 +1435,11 @@
  
  /* Show more */
  .pagination-show-more {
-   margin-left: auto;
+   flex-grow: 1;
+   margin-left: 100px;
    max-width: 170px;
- }
+   max-height: 44px;
+}
  
  /* Without background */
  .pagination-clear {
@@ -1450,13 +1447,13 @@
    padding: 0;
    background-color: transparent;
  }
- 
+ /* Отображение поповера */
  .popover {
    position: absolute;
    top: 0;
    right: 0;
    z-index: 1;
-   display: none;
+   display: none; 
    box-sizing: border-box;
    width: 300px;
    padding: 40px;
@@ -1498,9 +1495,9 @@
  
  .popover-cart .popover-close-button {
    padding-left: 44px;
-   background-image: url("images/cart-popover.svg");
+   background-image: url("../images/cart.svg");
    background-repeat: no-repeat;
-   background-position: 27px center;
+   background-position: 21px center;
  }
  
  .popover-content {
@@ -1574,6 +1571,7 @@
  }
  
  .cart-item .button {
+   max-height: 44px;
    grid-row-start: 1;
    grid-row-end: 3;
    grid-column-start: 2;
