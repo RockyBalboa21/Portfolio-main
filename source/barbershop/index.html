@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav-ico.png">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- Шапка -->
@@ -36,36 +37,37 @@
               </svg>
               <span class="visually-hidden">Корзина</span>
             </a>
+
             <div class="popover popover-cart">
-              <button class="popover-close-button button button-light">
+              <button class="popover-close-button button button-light" type="button">
                 2
                 <span class="visually-hidden">Закрыть</span>
               </button>
               <div class="popover-content">
                 <h2 class="popover-title">Корзина</h2>
                 <ul class="cart-items-list">
-                    <li class="cart-item">
-                      <p class="cart-item-title">Стрижка машинкой</p>
-                      <p class="cart-item-price">800 ₽</p>
-                      <button type="button" class="cart-item-button button">
-                        <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
-                        </svg>
-                        <span class="visually-hidden">Удалить из корзины</span>
-                      </button>
-                    </li>
-                    <li class="cart-item">
-                      <p class="cart-item-title">Стрижка усов</p>
-                      <p class="cart-item-price">1200 ₽</p>
-                      <button class="cart-item-button button" type="button">
-                        <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
-                        </svg>
-                        <span class="visually-hidden">Удалить из корзины</span>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="cart-item">
+                    <p class="cart-item-title">Стрижка машинкой</p>
+                    <p class="cart-item-price">800 ₽</p>
+                    <button class="cart-item-button button" type="button">
+                      <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <p class="cart-item-title">Стрижка усов</p>
+                    <p class="cart-item-price">1200 ₽</p>
+                    <button class="cart-item-button button" type="button">
+                      <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="navigation-item">
@@ -86,7 +88,7 @@
         <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 
         <!-- Лого -->
-        <img class="logo" src="images/logo-full.svg" width="361" height="152" alt="Барбершоп «Бородинский»">
+        <img class="logo" src="images/logo-full.svg" width="367" height="152" alt="Барбершоп «Бородинский»">
 
         <!-- Преимущества -->
         <section class="advantages">
@@ -98,7 +100,7 @@
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Круто</h3>
-              <p class="advantages-description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! <br>Во всяком случае внешне.</p>
+              <p class="advantages-description">Забудьте, как вы стриглись раньше.<br> Мы сделаем из вас звезду футбола или кино!<br> Во всяком случае внешне.</p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Дорого</h3>
@@ -132,7 +134,6 @@
           <!-- Фотогалерея -->
           <section class="gallery">
             <h2 class="gallery-title">Фотогалерея</h2>
-
             <div class="slider">
               <div class="slider-wrapper">
                 <img class="slider-image" src="images/gallery-1.jpg" alt="Примеры работ" width="390" height="250">
@@ -144,30 +145,30 @@
                     <span class="visually-hidden">Следующее фото</span>
                   </button>
                 </div>
-
-                <ol class="slider-pagination">
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ol>
               </div>
+
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current">
+                    <span class="visually-hidden">1 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">4 фото</span>
+                  </button>
+                </li>
+              </ol>
             </div>
           </section>
         </div>
@@ -180,7 +181,7 @@
             <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
             <address class="contacts-address">
               <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-              <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
+              <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </address>
             <h3 class="contacts-subtitle">Время работы</h3>
             <ul class="contacts-schedule">
@@ -221,7 +222,7 @@
                 <label class="form-label" for="appointment-phone">
                   Телефон
                 </label>
-                <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00" required>
+                <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
               </p>
               <p class="field-group appointment-form-name">
                 <label class="form-label" for="appointment-name">
@@ -241,7 +242,7 @@
       <div class="page-footer-container">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <img class="footer-contacts-logo" src="images/logo-footer.svg" width="183" height="21" alt="Логотип Барбершоп «Бородинский»">
+          <img class="footer-contacts-logo" src="images/logo-footer.svg" width="187" height="24" alt="Логотип Барбершоп «Бородинский»">
           <address class="footer-contacts-address">
             <p class="footer-about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -251,9 +252,9 @@
         <section class="newsletter">
           <h2 class="page-footer-title">Получайте лучшие предложения</h2>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="newsletter-email">
+            <p class="newsletter-email field-group">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
             </p>
             <button class="button newsletter-button" type="submit">
               <span class="visually-hidden">Отправить</span>
@@ -286,7 +287,7 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -304,7 +305,7 @@
               <label class="auth-form-checkbox control">
                 <input class="visually-hidden control-input" type="checkbox" name="firm-storе" checked>
                 <span class="control-mark"></span>
-                <span class="control-label">Запомнить меня</span>
+              <span class="control-label">Запомнить меня</span>
               </label>
               <a class="auth-form-recovery" href="#">Забыл пароль</a>
             </p>

@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav-ico.png">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 
@@ -68,8 +69,7 @@
         </header>
 
         <section class="catalog-products">
-          <!--временно добавим атрибут hidden, чтобы заголовок не рушил сетку-->
-          <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
+          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <!-- Фильтрация -->
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -78,10 +78,10 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 42px; width: 136px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -105,42 +105,42 @@
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men">
                     <span class="control-mark"></span>
-                    <span class="control-label">Bed Head for Men</span>
+              <span class="control-label">Bed Head for Men</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>
                     <span class="control-mark"></span>
-                    <span class="control-label">Homme Deep Cleansing Cool</span>
+              <span class="control-label">Homme Deep Cleansing Cool</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="so-intense" checked>
                     <span class="control-mark"></span>
-                    <span class="control-label">So Intense</span>
+              <span class="control-label">So Intense</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="sprekenhus">
                     <span class="control-mark"></span>
-                    <span class="control-label">Sprekenhus</span>
+              <span class="control-label">Sprekenhus</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
                     <span class="control-mark"></span>
-                    <span class="control-label">Firm Storе</span>
+              <span class="control-label">Firm Storе</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="winter-body" checked>
                     <span class="control-mark"></span>
-                    <span class="control-label">Winter Body</span>
+              <span class="control-label">Winter Body</span>
                   </label>
                 </li>
               </ul>
@@ -153,21 +153,21 @@
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="shaving-supplies">
                     <span class="control-mark"></span>
-                    <span class="control-label">Бритвенные принадлежности</span>
+              <span class="control-label">Бритвенные принадлежности</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="care-products" checked>
                     <span class="control-mark"></span>
-                    <span class="control-label">Средства для ухода</span>
+              <span class="control-label">Средства для ухода</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="accessories">
                     <span class="control-mark"></span>
-                    <span class="control-label">Аксессуары</span>
+              <span class="control-label">Аксессуары</span>
                   </label>
                 </li>
               </ul>
@@ -190,13 +190,13 @@
                 <button class="visually-hidden" type="submit">Отсортировать продукты</button>
               </form>
 
-              <a href="#" class="card-grid-toggle" type="button">
+              <a href="#" class="card-grid-toggle">
                 <span class="visually-hidden">Показать список</span>
                 <svg width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                   <path d="M2 0a2 2 0 100 4 2 2 0 000-4zm0 6a2 2 0 100 4 2 2 0 000-4zm-2 8a2 2 0 114 0 2 2 0 01-4 0zM7 1a1 1 0 000 2h8a1 1 0 100-2H7zM6 8a1 1 0 011-1h8a1 1 0 110 2H7a1 1 0 01-1-1zm1 5a1 1 0 100 2h8a1 1 0 100-2H7z" />
                 </svg>
               </a>
-              <a href="#" class="card-grid-toggle card-grid-toggle-current" type="button">
+              <a href="#" class="card-grid-toggle card-grid-toggle-current">
                 <span class="visually-hidden">Показать карточки</span>
                 <svg width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                   <path d="M0 2a2 2 0 114 0 2 2 0 01-4 0zm6 0a2 2 0 114 0 2 2 0 01-4 0zm10 0a2 2 0 10-4 0 2 2 0 004 0zM0 8a2 2 0 114 0 2 2 0 01-4 0zm10 0a2 2 0 10-4 0 2 2 0 004 0zm2 0a2 2 0 114 0 2 2 0 01-4 0zm-8 6a2 2 0 10-4 0 2 2 0 004 0zm2 0a2 2 0 114 0 2 2 0 01-4 0zm10 0a2 2 0 10-4 0 2 2 0 004 0z" />
@@ -307,7 +307,7 @@
       <div class="page-footer-container">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <img class="footer-contacts-logo" src="images/logo-footer.svg" width="183" height="21" alt="Логотип Барбершоп «Бородинский»">
+          <img class="footer-contacts-logo" src="images/logo-footer.svg" width="187" height="24" alt="Логотип Барбершоп «Бородинский»">
           <address class="footer-contacts-address">
             <p class="footer-about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -327,9 +327,9 @@
           </form>
         </section>
         <section class="footer-social">
-         <h2 class="page-footer-title">Давайте дружить</h2>
-         <ul class="footer-social-list">
-           <li class="footer-social-item">
+          <h2 class="page-footer-title">Давайте дружить</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
              <a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
                <span class="visually-hidden">Твиттер</span>
              </a>
