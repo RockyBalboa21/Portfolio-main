@@ -1,102 +1,196 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Портфолио Герасимов Александр</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body class="page">
-<!-- ДОБАВИТЬ КНОПКУ ИЗМЕНЕНИЯ ТЕМЫ И ПОКЛЮЧИТЬ ТЕМЫ-->
-    <header class="page-header">
-      <div class="container">
-        <p class="dev">Front-End Developer</p>
-        <button class="theme-button" type="button">Изменить тему</button>
-        <a class="header-email" href="mailto:aliaxandr.gerasimau@gmail.com">aliaxandr.gerasimau@gmail.com</a>
-        <a class="header-phone" href="tel:+375293096030">+375 29 309 60 30</a>
-      </div>
-    </header>
+		<link rel="shortcut icon" href="favicon-a.ico" type="image/x-icon">
+		<link rel="icon" href="favicon-a.ico" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
+		<title>Портфолио Герасимов Александр</title>
+	</head>
 
-    <section class="hero-image">
-      <div class="container">
-        <h1 class="heading">Герасимов Александр</h1>
-      </div>
-    </section>
-<!-- ИЗМЕНИТЬ ЭТУ СЕКЦИЮ -->
-    <section class="intro">
-      <div class="container">
-        <h2 class="subheading">Давайте познакомимся</h2>
-        <div class="family">
-          <h3><p class="me">Это я, <b>Александр</b></p></h3>
-        </div>
-        <div class="user-family">
-          <h3><p class="my-son">Мой сын <b>Владислав &#128153;</b></p></h3>
-          <figure class="user-image">
-          <img src="files/I and my Family.png" width="250" height="300" alt="Фотография меня с моей семьи">
-          </figure>
-          <h3><p class="my-wife">Моя жена <b>Виктория &#128151</b></p></h3>
-        </div>
-        <h3><p class="my-daughter">Моя дочь <b>Анна &#128157</b></p></h3>
-        <h3>Чем могу быть полезен</h3>
-        <p>Могу верстать, могу не верстать, могу заставить верстать других.</p>
-        <div class="skills">
-          <h3>Мои навыки</h3>
-          <p>После просмотра портфолио - рекомендую Вам оставить обратную связь о моих навыках изменив шкалу в %</p>
-          <dl class="skills-list">
-            <dt class="skill-html">HTML</dt>
-            <dd class="level"><div style="width: 60%;">60%</div></dd>
-            <dt class="skill-css">CSS</dt>
-            <dd class="level"><div style="width: 40%;">40%</div></dd>
-          </dl>
-        </div>
-      </div>
-    </section>
+	<body class="page light-theme">
+		
+		<div class="wrapper ">
+			<div class="stycky">
+				<header class="page-header">
+					<div class="container-header">
+						<p class="dev">Front-End Developer</p>
+						<button class="theme-button" type="button">Изменить тему</button>
+						<a class="header-email" href="mailto:aliaxandr.gerasimau@gmail.com">aliaxandr.gerasimau@gmail.com</a>
+						<a class="header-phone" href="tel:+375293096030">+375 29 309 60 30</a>
+					</div>
+				</header>
 
-    <section class="portfolio">
-      <div class="container">
-        <h2 class="subheading">Мои работы</h2>
-        <figure class="project-image">
-          <img src="files/project.jpg" width="928" height="486" alt="Cайт магазина товаров для дома">
-        </figure>
-<!-- НУЖНО КРАСИВО ОФОРМИТЬ ВСЮ СЕКЦИЮ ПОРТФОЛИО -->
-        <div class="open-project">
-          <p>Мой первый сайт.</p>
-          <a class="button" href="source/project-gloevk/index.html"><h3>Магазин товаров для дома</h3></a>
-          <p>На все случаи жизни</p>
-          <a class="button" href="source/card_visit/Untitled-1.html"><h3>Визитная карточка</h3></a>
-          <p>Вдруг решил жить в каиф</p>
-          <a class="button" href="source/my_site_new/index.html"><h3>Мой новый сайт</h3></a>
-          <p>Статический блог про обучение HTML и CSS.</p>
-          <a class="button" href="source/blog_about_learning/index.html"><h3>Блог начинающего верстальщика</h3></a>
-          <p>Испытание: другой вариант главной</p>
-          <a class="button" href="source/cat_energy/main-page.html"><h3>Cat Energy</h3></a>
-          <p>Создан в процессе прохожнения тренажёров HTML Academy</p>
-          <a class="button" href="source/kvast/index.html"><h3>Кваст</h3></a>
-          <p>Создан в процессе прохожнения тренажёров HTML Academy - финальный проект.</p>
-          <a class="button" href="source/keksby_final/index.html"><h3>The Great Keksby</h3></a>
-          <p>Создан в процессе прохожнения марафона HTML Academy.</p>
-          <a class="button" href="source/botanika/index.html"><h3>Botanika</h3></a>
-          <p>Создан в процессе прохожнения марафона HTML Academy - ТРЕБУЕТСЯ ЗАКОНЧИТЬ СТИЛИЗАЦИЮ.</p>
-          <a class="button" href="source/scandi/index.html"><h3>SKANDI</h3></a>
-          <p>Нужен был пробный простенький сайт</p>
-          <a class="button" href="source/laptop/index.html"><h3>Ремонт ноутбуков</h3></a>
-          <p>Нужен был немного красивенький сайт</p>
-          <a class="button" href="source/premium_cars_rental/index.html"><h3>Аренда премиальных автомобилей</h3></a>
-          <p>Начался период обучения по профессии Frondend в HTML Academy</p>
-          <a class="button" href="source/barbershop/index.html"><h3>Сайт Барбершоп</h3></a>
-          <p>Начался период обучения по профессии Frondend в HTML Academy</p>
-          <a class="button" href="source/sedona/index.html"><h3>Сайт Седона</h3></a>
-        </div>
-      </div>
-    </section>
+				<main class="main">
+					<section class="hero-image">
+						<div class="container">
+							<h1 class="heading">Герасимов Александр</h1>
+						</div>
+					</section>
 
-    <footer class="page-footer">
-      <div class="container"> 
-        <a class="footer-email" href="mailto:aliaxandr.gerasimau@gmail.com">aliaxandr.gerasimau@gmail.com</a>
-        <a class="footer-phone" href="tel:+375293096030">+375 29 309 60 30</a>
-      </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+					<section class="intro">
+						<div class="container">
+							<h2 class="subheading">Давайте познакомимся</h2>
+							<div class="family">
+								<figure class="user-image">
+									<img src="files/family.png" width="430" height="500" alt="Фотография меня с моей семьёй">
+									<figcaption class="user">
+									Это я, <b>Александр</b> и моя семья: <br>жена <b>Виктория &#128151;</b>, сын <b>Владислав &#128153;</b>, дочь <b>Анна &#128157;</b>
+									</figcaption>
+								</figure>
+							</div>
+
+						<h3>Чем могу быть полезен</h3>
+						<p>Могу верстать, могу не верстать, могу заставить верстать других.</p>
+
+						<div class="skills">
+							<h2 class="subheading">Мои навыки</h3>
+								<dl class="skills-list">
+									<dt class="skill-html">HTML</dt>
+									<dd class="level">
+									<div style="width: 90%">90%</div>
+									</dd>
+									<dt class="skill-css">CSS</dt>
+									<dd class="level">
+									<div style="width: 80%">80%</div>
+									</dd>
+								</dl>
+						</div>
+						</div>
+					</section>
+			</div>
+				<div class="project">
+					<section class="sidebar">
+					<nav class="sidebar-menu">
+					<h3 class="menu-title">Навигация</h3>
+					<ul class="sidebar-list">
+						<li>
+							<div class="effect-2">
+								<a href="source/project-gloevk/index.html">Мой первый сайт</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-1">
+								<a href="source/laptop/index.html" class="sidebar-link">Ремонт ноутбуков</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-2">
+								<a href="source/card_visit/Untitled-1.html">Визитная карточка</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-1">
+								<a href="source/my_site_new/index.html" class="sidebar-link">Мой новый сайт</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-2">
+								<a href="source/blog_about_learning/index.html">Блог верстальщика</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-1">
+								<a href="source/cat_energy/main-page.html" class="sidebar-link"> Сайт Cat Energy</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-2">
+								<a href="source/premium_cars_rental/index.html">Сайт аренда авто</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-1">
+								<a href="source/kvast/index.html" class="sidebar-link">Сайт Кваст</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-2">
+								<a href="source/keksby_final/index.html"> Сайт Keksby</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-1">
+								<a href="source/botanika/index.html" class="sidebar-link">Сайт Botanika</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-2">
+								<a href="source/scandi/index.html">Сайт SKANDI</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-1">
+								<a href="source/barbershop/index.html" class="sidebar-link">Сайт Барбершоп</a>
+							</div>
+						</li>
+						<li>
+							<div class="effect-2">
+								<a href="source/sedona/index.html">Сайт Седона</a>
+							</div>
+						</li>
+					</ul>
+					<div class="text">
+						<p class="sidebar-text">Почти все свои знания в области разработки я получил обучаясь в </p>
+						<div class="effect-3">
+							<a class="academy" href="https://htmlacademy.ru/study" data-hover="HTML Academy">HTML Academy</a> 
+						</div>
+						
+						<p class="sidebar-text">Cейчас я продолжаю осваивать свою новую профессию «Фронтенд-разработчик».</p>
+						<p class="sidebar-text">Благодарю всю команду Академии за огромную проделанную работу!!! </p>
+					</div>
+					
+					</nav>
+					</section>
+
+					<section class=" content content-gallery gallery">
+					<h2 class="subheading">Мои работы</h2>
+					<h3 class="gallery-title">Галерея</h3>
+					<div class="gallery-items">
+						<div class="gallery-item gallery-item-big">
+							<img src="img/gallery/gloevk.jpg" width="500" height="500" alt="Cайт магазина товаров для дома">
+						</div>
+						<div class="gallery-item">
+							<img src="img/gallery/blog.jpg" width="500" height="500" alt="Cайт начинающего верстальщика">
+						</div>
+						<div class="gallery-item">
+							<img src="img/gallery/botanika.jpg" width="500" height="500" alt="Cайт магазина цветов">
+						</div>
+						<div class="gallery-item">
+							<img src="img/gallery/keksby.jpg" width="500" height="500" alt="Cайт магазина товаров для котов">
+						</div>
+						<div class="gallery-item">
+							<img src="img/gallery/kvast.jpg" width="500" height="500" alt="Cайт магазина кваса">
+						</div>
+						<div class="gallery-item">
+							<img src="img/gallery/premium-cars-rental.jpg" width="500" height="500" alt="Cайт аренды автомобилей">
+						</div>
+						<div class="gallery-item">
+							<img src="img/gallery/barbershop.jpg" width="500" height="500" alt="Cайт барбершопа">
+						</div>
+						<div class="gallery-item gallery-item-big">
+							<img src="img/gallery/sedona.jpg" width="500" height="500" alt="Cайт гостиниц в Седоне">
+						</div>
+					</div>
+					
+					</section>
+				</div>
+				
+			</main>
+
+			<footer class="page-footer">
+				<div class="container-footer">
+					<img class="rule-img" src="img/golden-rule.png" height="65" width="65" alt="Логотип." >
+					<img class="rule-img" src="img/nii.jpg" height="65" width="65" alt="Картинка правила нет ничего невозможного." >
+					<a class="footer-email" href="mailto:aliaxandr.gerasimau@gmail.com">aliaxandr.gerasimau@gmail.com</a>
+					<a class="footer-phone" href="tel:+375293096030">+375 29 309 60 30</a>
+				</div>
+			</footer>
+		
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>
