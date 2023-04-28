@@ -285,6 +285,7 @@
 }
 
 a {
+  margin: 0 8px;
   position: relative;
   display: inline-block;
   outline: none;
@@ -309,7 +310,7 @@ div[class^="effect-"] {
 .effect-1 a {
   padding: 0;
   color: #ffffff;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 .effect-1 a::after {
@@ -338,13 +339,13 @@ div[class^="effect-"] {
   padding: 0 15px;
   min-height: 25px;
   color: #ffffff;
-  line-height: 29px;
+  line-height: 30px;
 }
 
 .effect-2 a::before,
 .effect-2 a::after {
   position: absolute;
-  width: 25px;
+  width: 30px;
   height: 2px;
   background-color: #ffffff;
   content: "";
@@ -386,11 +387,11 @@ div[class^="effect-"] {
 
 .sidebar-link::before {
   content: '';
-  width: 8px;
-  height: 8px;
+  min-width: 8px;
+  min-height: 8px;
   border-radius: 1em;
   background-color: #20ff87;
-  margin:  0 10px;
+  margin:  0 10px 0 2px;
 }
 
 .text {
