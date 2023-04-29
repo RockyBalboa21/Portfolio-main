@@ -15,7 +15,7 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -23,7 +23,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
 *,
@@ -35,6 +35,7 @@
 img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -68,12 +69,7 @@ img {
   margin: 0 auto;
 }
 
-.page-header {
-  min-height: 65px;
-}
-
 .page-header-catalog {
-  min-height: 65px;
   margin-bottom: 0;
 }
 
@@ -88,7 +84,7 @@ img {
   gap: 30px;
   min-height: 65px;
   padding: 0 70px;
-  margin-bottom: -5px;
+  margin: auto 0;
 }
 
 .header-nav-catalog {
@@ -97,7 +93,6 @@ img {
   gap: 30px;
   min-height: 65px;
   padding: 0 70px;
-  margin-bottom: -5px;
 }
 
 .logo {
@@ -114,7 +109,8 @@ img {
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  min-height: 65px;
+  margin: auto 0;
   padding: 0;
   font-size: 20px;
   line-height: 26px;
@@ -129,6 +125,7 @@ img {
 
 .site-menu-item-active {
   position: relative;
+  cursor: pointer;
 }
 
 .site-menu-item-active::after {
@@ -139,6 +136,7 @@ img {
   bottom: 3px;
   height: 2px;
   background-color: #756257;
+  cursor: pointer;
 }
 
 .site-menu-link {
@@ -150,6 +148,7 @@ img {
 
 .site-menu-link[href]:hover {
   color: #756257;
+  cursor: pointer;
 }
 
 .site-menu-link[href]:active {
@@ -166,6 +165,7 @@ img {
 }
 
 .additional-menu-button {
+  font-family: "PT Sans", sans-serif;
   display: block;
   min-width: 160px;
   padding: 7px 15px;
@@ -245,7 +245,7 @@ img {
   background-repeat: no-repeat;
   background-position:
     50% calc(50% - 16px),
-    50% 100%,
+    50% calc(100% + 1px),
     50% 50%;
   background-size:
     auto auto,
@@ -408,9 +408,15 @@ img {
   margin-left: 20px;
 }
 
+.field-input::placeholder {
+  font-size: 18px;
+  color: #000000;
+  opacity: 0.6;
+}
+
 .field-input {
   width: 100%;
-  padding: 0 17px;
+  padding: 0 19px 0 22px;
   background-color: #f2f2f2;
   border: 2px solid transparent;
   border-radius: 4px;
@@ -510,9 +516,8 @@ img {
   display: block;
 }
 
-.field-input:invalid {
-  background-color: #ffffff;
-  border-color: #ff5757;
+.field-input:required:valid {
+  border: 3px solid #06af06;
 }
 
 .range {
@@ -624,6 +629,7 @@ img {
 }
 
 .slider-bar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -637,6 +643,11 @@ img {
   background-color: #ffffff;
   border: none;
   border-radius: 5px;
+}
+
+.slider-thumb:last-child {
+  position: absolute;
+  left: 216px;
 }
 
 .slider-thumb:hover {
@@ -778,7 +789,8 @@ img {
 }
 
 .card-link:focus:not(:active) + .card-img {
-  outline: 3px solid #83b3d3;
+  border: 3px solid #83b3d3; /* ? не работает бордер, добавил прозрачность на фокус    */
+  opacity: 0.3;
 }
 
 .card-description {
@@ -885,7 +897,6 @@ img {
 .advantage-description {
   display: grid;
   align-content: start;
-
   gap: 26px;
   min-height: 384px;
   padding: 60px;
@@ -902,7 +913,6 @@ img {
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
-
   color: #333333;
   background: #ffffff;
   list-style: none;
@@ -1125,6 +1135,7 @@ img {
 
 .subscribe-button {
   border-radius: 0 10px 10px 0;
+  font-family: "PT Sans", sans-serif;
 }
 
 .social {
@@ -1206,6 +1217,7 @@ img {
 }
 
 .filter-submit {
+  font-family: "PT Sans", sans-serif;
   min-height: 48px;
   margin-bottom: 16px;
 }
@@ -1237,8 +1249,6 @@ img {
   outline: 3px solid #83b3d3;
   outline-offset: -3px;
 }
-
-/* Control */
 
 .control {
   position: relative;
@@ -1383,6 +1393,7 @@ img {
 }
 
 .pagination-button {
+  font-family: "PT Sans", sans-serif;
   min-width: 620px;
   border-radius: 4px;
   line-height: 26px;
@@ -1460,12 +1471,13 @@ img {
   bottom: 0;
   left: 0;
   z-index: 4;
-
+/* !!! отображение модального окна !!! */
   display: none;
   place-content: center;
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+/* !!! отображение модального окна через класс!!! */
 .modal-opened {
   display: grid;
 }
@@ -1518,8 +1530,10 @@ img {
 }
 
 .modal-title {
+  font-family: "PT Sans", sans-serif;
   align-self: center;
   margin: 0;
+  margin-top: 3px;
   margin-left: -2px;
   width: 499px;
 }
@@ -1551,8 +1565,13 @@ img {
   border: 2px solid #000000;
 }
 
+.search-form-date .data-input {
+  padding: 0 19px 0 19px;
+}
+
 .search-form-button {
   grid-column: 1 / -1;
+  font-family: "PT Sans", sans-serif;
 }
 
 .number {
