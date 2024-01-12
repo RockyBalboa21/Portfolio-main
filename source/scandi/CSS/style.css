@@ -15,9 +15,77 @@
 }
 
 body {
+    width: 1400px;
+    margin: 0 auto;
     font-family: 'Montserrat';
     background: #EFE6E4;
     color: #533738;
+}
+
+.page-header {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 38px;
+    height: 25px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 16px;
+}
+
+.main-nav {
+    display: inline-block;
+    flex: 1 1 auto;
+    /* margin-left: 65px; */
+    /* padding: 0 1px; */
+}
+
+.nav-list {
+    margin: 0 35px 0 87px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.nav-item:first-child a {
+    padding: 10px 12px 10px 0px;
+}
+
+.nav-item:nth-child(2) a {
+    padding: 10px 13px 10px 16px
+}
+
+.nav-item a {
+    padding: 10px 13px 10px 13px;
+}
+
+.nav-item:last-child a {
+    padding: 10px 0 10px 12px;
+}
+
+.header-phone {
+    width: 145px;
+    display: flex;
+    align-items: center;
 }
 
 a {
@@ -26,22 +94,46 @@ a {
 }
 
 .promo {
+    position: relative;
+    padding-top: 47px;
+    padding-left: 185px;
+}
+
+.promo::after {
+    content: "";
+    position: absolute;
+    height: 715px;
+    top: -63px;
+    right: 0px;
+    bottom: 0px;
+    left: 0;
+    z-index: -2;
+    background-color: #EFE6E4;
+    background-repeat: no-repeat;
     background-image: url(../img/JPG/section-1-home.jpg);
+    background-position: 0px 100%;
 }
 
 .promo-info {
+    margin-bottom: 0;
+    max-width: 534px;
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
-}   
+}
 
 .promo-descrition {
+    margin: 21px 0 24px 0;
+    max-width: 494px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
 }
 
-.promo-text .promo-btn {
+.promo-btn {
+    position: absolute;
+    left: 182px;
+    padding: 25px 66px 24px 70px;
     background: #CC8B86;
     color: #533738;
     font-weight: 500;
@@ -50,7 +142,152 @@ a {
 }
 
 .info {
+    font-size: 40px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
+.about-us {
+    margin-top: 298px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.about-info {
+    text-align: center;
+    font-size: 40px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.about-image {
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.text-container {
+    margin: 0;
+    padding: 0;
+    width: 528px;
+    margin-left: 62px;
+}
+
+.about-text1,
+.about-text2 {
+    margin-top: 8px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.experience-container {
+    margin-top: 21px;
+    padding: 75px 0 81px 0;
+    background-color: #8D7370;
+
+}
+
+.experience-list {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0 48px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.value {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px;
+    margin-bottom: 7px;
+}
+
+.our-work {
+    margin-top: 65px;
+}
+
+.our-work-info {
+    margin-bottom: 42px;
+}
+
+.work-container {
+    margin: 0 100px;
+}
+
+.work-example {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.example-text {
+    position: relative;
+    z-index: 1;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 488px;
+    height: 451px;
+    background: rgba(100, 72, 69, 0.80);
+}
+
+.nice-apartment{
+    margin: 86px 109px 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.description {
+    margin: 19px 35px 0;
+    width: 418px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.example-background {
+    position: absolute;
+}
+
+.gallery-item {
+    margin-left: 20px;
+}
+
+.demo {
+    display: block;
+    text-align: center;
+    color: #533738;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
