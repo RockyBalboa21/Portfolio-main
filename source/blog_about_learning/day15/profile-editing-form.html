@@ -6,37 +6,108 @@
     <link rel="stylesheet" href="profile-editing-form.css">
   </head>
   <body>
-    <h1>Профиль</h1>
-
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
-      Ваш пол:
-      <label>
-        <input type="radio" name="gender" value="m"> Мужской
-      </label>
-      <label>
-        <input type="radio" name="gender" value="f" checked> Женский
-      </label>
-      <br>
-      Месяц и год рождения:
-      <br>
-      <select name="mouth">
-        <option>Январь</option>
-      </select>
-      <select name="year">
-        <option>1990</option>
-      </select>
-      <br>
-      Знакомые технологии:
-      <br>
-      <select name="tech" multiple size="4">
-        <option>HTML</option>
-        <option selected>CSS</option>
-        <option>JavaScript</option>
-        <option>Node.js</option>
-      </select>
-      <br>
-      Фото: <input type="file" name="photo">
-      <input type="submit" value="Сохранить">
-    </form>
+    <div class="container">
+      <h1>Профиль</h1>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" value="Кексик">
+        <br>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" autofocus  required>
+        <br>
+        <label for="search">Название города</label>
+        <input type="search" name="search" id="search">
+        <br>
+        <label for="address">Адрес</label>
+        <textarea id="address" name="address" rows="2"></textarea>
+        <label>
+        Ваш пол:
+        <label>
+          <input type="radio" name="gender" value="m"> Мужской
+        </label>
+        <label>
+          <input type="radio" name="gender" value="f" checked> Женский
+        </label>
+        <br>
+        Месяц и год рождения котят:
+        <br>
+        <select name="mouth">
+          <option>Январь</option>
+          <option>Февраль</option>
+        </select>
+        <select name="year">
+          <option>1990</option>
+          <option>1980</option>
+        </select>
+        <br>
+        <div class="half-width">
+          <label for="date">Дата рождения</label>
+          <input type="date" id="date" name="date" value="2024-02-24">
+        </div>
+        <div class="half-width">
+          <label for="time">Время рождения</label>
+          <input type="time" name="time">
+        </div>
+        <br>
+        <label><input type="checkbox" name="allow">Разрешить изображения</label>
+        <br>
+        Знакомые технологии:
+        <br>
+        <select name="tech" multiple size="4">
+          <option>HTML</option>
+          <option selected>CSS</option>
+          <option>JavaScript</option>
+          <option>Node.js</option>
+        </select>
+        <br>
+        <div class="half-width">
+          <label for="browser">Любимый браузер</label>
+          <input type="text" id="browser" name="browser" list="user-browser">
+          <datalist id="user-browser">
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+          </datalist>
+        </div>
+        <div class="half-width">
+          <label for="amount">Количество</label>
+          <input type="number" min="0" max="50" step="1" id="amount" name="amount">
+        </div>
+        <br>
+        Фото: <input type="file" name="photo">
+        <input type="submit" value="Сохранить">
+        <input type="reset" value="Сбросить">
+        <button type="submit">Войти <img src="/source/blog_about_learning/img/enter-light.png"></button>
+        <input type="image" src="/source/blog_about_learning/img/enter.png" alt="Войти">
+      </form>
+    </div>
+    <div class="container">
+      <form class="order" action="https://echo.htmlacademy.ru/courses" method="post" oninput="dayscountval.value=dayscount.value">
+        <fieldset>
+          <legend>Поиск отеля</legend>
+          <label for="search">Название города</label>
+          <input type="search" id="search" name="search" value="Осло, Норвегия">
+          <div class="one-third-width">
+            <label for="day">Число</label>
+            <input type="number" min="1" max="31" id="day" name="day" value="17">
+          </div>
+          <div class="two-third-width">
+            <label for="month">Месяц</label>
+            <input type="month" id="month" name="month" value="2014-09">
+          </div>
+          <div class="half-width">
+            <label for="dayscount">Количество дней</label>
+            1
+            <input type="range" id="dayscount" name="dayscount" min="1" max="14" step="1"> 14
+          </div>
+          <div class="half-width output-area">
+            <output name="dayscountval">14</output>
+          </div>
+          <div class="buttons">
+            <input type="submit" value="Забронировать">
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>

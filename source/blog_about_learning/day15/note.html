@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Проверяем работу localStorage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="keksik-style.css">
+    <link rel="stylesheet" href="note.css">
+</head>
+
+<body>
+    <header class="page-header">Путевые заметки</header>
+    <main>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <label for="note">Текст заметки</label>
+            <textarea id="note" name="note" rows="9"></textarea>
+            <div class="buttons">
+                <input type="submit" value="Сохранить">
+            </div>
+        </form>
+    </main>
+    <footer class="page-footer"></footer>
+    <script>
+        if (window.localStorage) {
+            var elements = document.querySelectorAll('[name]');
+
+            for (var i = 0, length = elements.length; i < length; i++) {
+                (function (element) {
+                    var name = element.getAttribute('name');
+
+                    element.value = localStorage.getItem(name) || element.value;
+
+                    element.onkeyup = function () {
+                        localStorage.setItem(name, element.value);
+                    };
+                })(elements[i]);
+            }
+        }
+    </script>
+</body>
+
+</html>

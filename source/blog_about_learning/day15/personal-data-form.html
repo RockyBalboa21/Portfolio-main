@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Переключение между полями</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="keksik-style.css">
+    <link rel="stylesheet" href="personal-data-form.css">
+</head>
+
+<body>
+    <header class="page-header">Форма личных данных</header>
+    <main>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <fieldset>
+                <legend>Заявление на получение визы</legend>
+                <label for="passport">Номер котопаспорта</label>
+                <input type="text" id="passport" name="passport" pattern="[0-9]{3}-[0-9]{5}"
+                    placeholder="Формат номера XXX-XXXXX">
+                <label for="tel">Номер телефона</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
+                    placeholder="Формат номера X-XXX-XXX">
+                <div class="half-width">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="half-width">
+                    <label for="url">Личный сайт</label>
+                    <input type="url" id="url" name="url">
+                </div>
+                <div class="one-third-width">
+                    <label for="color">Окрас</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                <div class="two-third-width">
+                    <label for="food">Любимая еда</label>
+                    <select id="food" name="food">
+                        <optgroup label="Вкуснятина">
+                            <option value="meat">Мясо</option>
+                            <option value="fish">Рыба</option>
+                            <option value="chi">Курочка</option>
+                            <option value="ind">Индейка</option>
+                            <option value="mice">Мыши</option>
+                        </optgroup>
+                        <optgroup label="Сойдёт">
+                            <option value="milk">Молоко</option>
+                            <option value="kef">Кефир</option>
+                            <option value="water">Вода</option>
+                            <option value="smet">Сметана</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Оформить">
+            </div>
+        </form>
+    </main>
+    <footer class="page-footer"></footer>
+</body>
+
+</html>

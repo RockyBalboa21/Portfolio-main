@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form" novalidate autocomplete="off">
+        <h3>Доставка Кексокорма</h3>
+
+        <p class="form__item">
+            <label for="nickname">Имя питомца для открытки:</label>
+            <br>
+            <input type="text" name="nickname" id="nickname" placeholder="Кексик">
+        </p>
+
+        <p>
+            Размер:
+            <label><input type="radio" name="unit" value="s" checked>S</label>
+            <label><input type="radio" name="unit" value="m">M</label>
+        </p>
+
+        <p class="form__item">
+            <label for="amount">Количество:</label>
+            <br>
+            <input type="number" name="amount" id="amount" placeholder="10">
+        </p>
+
+        <p class="form__item">
+            <select name="delivery">
+                <option value="Доставка" selected>Доставка</option>
+                <option value="Самовывоз">Самовывоз</option>
+            </select>
+            <select name="date">
+                <option value="Сегодня" selected>Сегодня</option>
+                <option value="Завтра">Завтра</option>
+                <option value="На выходных">На выходных</option>
+            </select>
+        </p>
+
+        <p>
+            <button>Заказать</button>
+        </p>
+    </form>
+
+    <script src="pristine.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
