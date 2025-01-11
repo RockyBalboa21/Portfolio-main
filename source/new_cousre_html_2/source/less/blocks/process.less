@@ -1,0 +1,117 @@
+.process {
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: @breakpoint-medium) {
+    padding-top: 46px;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    padding-top: 71px;
+  }
+}
+
+.process__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  color: @color-gray-700;
+  list-style: none;
+
+  @media (min-width: @breakpoint-medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 36px;
+    counter-reset: process;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.process__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+
+  @media (min-width: @breakpoint-medium) {
+    position: relative;
+    z-index: 0;
+    min-height: 280px;
+    padding-top: 15px;
+    padding-right: 72px;
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto;
+    gap: 32px;
+    counter-increment: process;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    padding-top: 15px;
+    padding-right: 0;
+  }
+
+  & + & {
+    @media (max-width: @breakpoint-small-down) {
+      margin-top: 22px;
+    }
+  }
+
+  &::before {
+    content: "";
+
+    width: 60px;
+    height: 60px;
+    margin-top: -2px;
+    background-color: @color-primary-500;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    @media (min-width: @breakpoint-medium) {
+      width: 80px;
+      height: 80px;
+      margin-top: 0;
+    }
+  }
+
+  &::after {
+    @media (min-width: @breakpoint-medium) {
+      content: counter(process);
+      position: absolute;
+      top: -25px;
+      right: 72px;
+      z-index: -1;
+      min-width: 150px;
+      color: @color-gray-50;
+      font-family: @font-heading;
+      font-size: 280px;
+      text-align: center;
+      line-height: 1;
+    }
+
+    @media (min-width: @breakpoint-large) {
+      top: -24px;
+      right: -6px;
+    }
+  }
+}
+
+.process__item--leaf::before {
+  background-image: url("../img/icons/icon_leaf.svg");
+}
+
+.process__item--powder::before {
+  background-image: url("../img/icons/icon_tub.svg");
+}
+
+.process__item--meal::before {
+  background-image: url("../img/icons/icon_eat.svg");
+}
+
+.process__item--weight::before {
+  background-image: url("../img/icons/icon_alarm.svg");
+}

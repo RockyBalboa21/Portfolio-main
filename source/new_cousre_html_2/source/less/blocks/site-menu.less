@@ -1,0 +1,92 @@
+.site-menu {
+  padding: 0;
+  font-family: @font-heading;
+  line-height: 1;
+  text-transform: uppercase;
+  list-style: none;
+
+  @media (max-width: @breakpoint-small-down) {
+    // display: none; открывает, скрывает главное меню на мобильном телефоне, если не cработает script-app.js
+
+    border-top: 1px solid @color-gray-150;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  @media (min-width: @breakpoint-medium) {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.site-menu__item {
+  @media (max-width: @breakpoint-small-down) {
+    border-bottom: 1px solid @color-gray-150;
+  }
+}
+
+.site-menu__item--active {
+  @media (min-width: @breakpoint-medium) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 9px;
+      right: 18px;
+      left: 18px;
+      height: 2px;
+      background-color: @color-primary-500;
+    }
+  }
+}
+
+.site-menu--main .site-menu__item--active {
+  &::after {
+    background-color: @color-primary-500;
+
+    @media (min-width: @breakpoint-large) {
+      background-color: @color-white;
+    }
+  }
+}
+
+.site-menu__link {
+  display: block;
+  padding: 23px 22px 22px;
+  color: @color-black;
+  text-decoration: none;
+
+
+  @media (min-width: @breakpoint-medium) {
+    padding: 21px 18px;
+  }
+
+  &:link:hover {
+    opacity: 0.6;
+  }
+
+  &:link:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    padding: 21px 17px 21px 17px;
+  }
+}
+
+.site-menu--main .site-menu__link {
+  @media (min-width: @breakpoint-large) {
+    color: @color-white;
+    padding: 21px 16px 21px 17px;
+  }
+}

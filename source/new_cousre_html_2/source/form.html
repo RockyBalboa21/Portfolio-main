@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cat Energy: Подбор программы</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body class="page__body">
+
+    <header class="page__header page-header">
+      <nav class="page-header__nav page-header__nav--main">
+        <div class="page-header__bar">
+          <a class="page-header__logo logo" href="./index.html">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="./img/logo-image-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo-image-tablet.svg">
+              <img class="logo__image" src="./img/logo-image-mobile.svg" width="34" height="38" alt="Логотип изображение.">
+            </picture>
+            <img class="logo__sign" src="./img/logo-sign.svg" width="101" height="19" alt="Логотип Cat Energy.">
+          </a>
+          <button class="page-header__toggler" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <ul class="page-header__menu site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-menu__item site-menu__item--active">
+            <a class="site-menu__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__main page-main">
+      <header class="page-main__header page-main__header--form container">
+        <h1 class="page-main__heading">Подбор программы</h1>
+        <p class="page-main__subheading">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      </header>
+
+      <section class="page-main__section form">
+        <h2 class="visually-hidden">Форма анкеты</h2>
+
+        <form class="form__container container" method="post" action="https://echo.htmlacademy.ru/">
+          <fieldset class="form__group form__group--cat field-group">
+            <legend class="visually-hidden">Данные кота</legend>
+
+            <ul class="field-group__list">
+              <li class="field-group__item">
+                <label class="field">
+                  <span class="field__lead">Имя:*</span>
+                  <input class="field__input" name="cat-name" type="text" placeholder="Барсик" pattern="[А-Яа-яЁё\s]+$" title="Допустима только кириллица" required>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="field">
+                  <span class="field__lead">Вес (кг):*</span>
+                  <input class="field__input" name="cat-weight" type="text" placeholder="7" pattern="([1-9]|1[0-9]|20)" title="Допустимы только цифры до 20" required>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="field">
+                  <span class="field__lead">Возраст (лет):</span>
+                  <input class="field__input" name="cat-age" type="text" placeholder="7" pattern="([1-9]|1[0-9]|20)" title="Допустимы только цифры до 20">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__group form__group--target field-group field-group--target">
+            <legend class="visually-hidden">Цель программы</legend>
+
+            <ul class="field-group__list field-group__list--target">
+              <li class="field-group__item">
+                <label class="control control--radio">
+                  <input class="control__input" name="target" type="radio" value="fit" checked>
+                  <span class="control__lead">Похудение</span>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="control control--radio">
+                  <input class="control__input" name="target" type="radio" value="fitness">
+                  <span class="control__lead">Набор массы</span>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="control control--radio">
+                  <input class="control__input" name="target" type="radio" value="advice">
+                  <span class="control__lead">Не знаю (нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__group form__group--contacts field-group">
+            <legend class="field-group__heading">
+              <span>Контактные&nbsp;данные (владельца&nbsp;кота)</span>
+            </legend>
+
+            <ul class="field-group__list field-group__list--contacts">
+              <li class="field-group__item">
+                <label class="field field--icon">
+                  <span class="field__lead">E-mail:*</span>
+                  <input class="field__input" name="e-mail" type="email" title="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                  <svg class="field__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#icon_email_new"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="field field--icon">
+                  <span class="field__lead">Телефон:*</span>
+                  <input class="field__input" name="phone" type="tel"
+                  title="8 (960) 900-60-90" placeholder="8 (960) 900-60-90" pattern="^8\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$|^8|^8\s|^8\s\(\d{3}\)\s|^8\s\(\d{3}\)\s\d{3}|^8\s\(\d{3}\)\s\d{3}-|^8\s\(\d{3}\)\s\d{3}-\d{2}|^8\s\(\d{3}\)\s\d{3}-\d{2}-"required>
+                  <svg class="field__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#icon_phone_new"></use>
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <div class="form__group form__group--comment field-group">
+            <label class="field-group__heading" for="comment">
+              <span>Комментарий</span>
+            </label>
+
+            <div class="field-group__field field field--no-label">
+              <textarea class="field__input field__input--textarea" name="comment" id="comment" rows="5"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </div>
+
+          <fieldset class="form__group form__group--additional field-group field-group--additional">
+            <legend class="field-group__heading">
+              <span>Дополнительно</span>
+            </legend>
+
+            <ul class="field-group__list field-group__list--additional">
+              <li class="field-group__item">
+                <label class="control control--checkbox">
+                  <input class="control__input" name="additional" type="checkbox" value="sweetener" checked>
+                  <span class="control__lead">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="control control--checkbox">
+                  <input class="control__input" name="additional" type="checkbox" value="water">
+                  <span class="control__lead">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="control control--checkbox">
+                  <input class="control__input" name="additional" type="checkbox" value="milk">
+                  <span class="control__lead">Молоко</span>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="control control--checkbox">
+                  <input class="control__input" name="additional" type="checkbox" value="vitamins">
+                  <span class="control__lead">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <div class="form__footer">
+            <button class="form__button button button--large" type="submit">Отправить заявку</button>
+            <p class="form__additional">* — Обязательные поля</p>
+          </div>
+        </form>
+      </section>
+
+      <footer class="page-main__footer contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+
+        <div class="contacts__container container">
+          <p class="contacts__heading">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+
+        <picture>
+          <source srcset="img/map_mobile.png" type="image/png" media="(max-width: 767px)">
+          <source srcset="img/map_tablet.png" type="image/png" media="(max-width: 1219px)">
+          <source srcset="img/map_desktop.png" type="image/png" media="(min-width: 1220px)">
+          <img class="contacts__map" src="img/map_mobile.png" width="320" height="362" alt="Google карта с расположением нашего шоурума.">
+        </picture>
+
+      </footer>
+    </main>
+
+    <footer class="page__footer page-footer">
+      <div class="page-footer__container container">
+        <a class="page-footer__logo logo logo--footer">
+          <img class="logo__image" src="img/logo-sign.svg" width="128" height="24" alt="Логотип Cat Energy.">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social-vk" href="#">
+              <span class="visually-hidden">vkontakte</span>
+              <svg width="30" height="22">
+                <use xlink:href="./img/sprite.svg#icon_vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social-insta" href="#">
+              <span class="visually-hidden">instagram</span>
+              <svg width="23" height="23" viewBox="0 0 23 23">
+                <use xlink:href="./img/sprite.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social-facebook" href="#">
+              <span class="visually-hidden">facebook</span>
+              <svg width="28" height="33" viewBox="0 0 28 33">
+                <use xlink:href="./img/sprite.svg#icon_facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Разработано в </span>HTML Academy
+          <svg class="developer__image" width="27" height="34" viewBox="0 0 27 34">
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+          </svg>
+
+          <p class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация</p>
+        </a>
+      </div>
+    </footer>
+    <script src="./js/app.min.js"></script>
+  </body>
+</html>

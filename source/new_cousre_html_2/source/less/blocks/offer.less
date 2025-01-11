@@ -1,0 +1,54 @@
+.offer {
+  padding: 186px 56px 43px;
+  color: @color-white;
+  background-color: @color-primary-500;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: 50% 58px, 50% 50%;
+  background-image:
+    url("../img/icons/icon_gift.svg"),
+    url("../img/background/catbag.jpg");
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/icons/icon_gift.svg"),
+      url("../img/background/catbag@2x.jpg");
+  }
+
+  @media (min-width: @breakpoint-medium) {
+    padding: 70px 120px 70px 422px;
+    background-position: 79px 50%, 50% 50%;
+    background-image:
+      url("../img/icons/icon_gift.svg"),
+      url("../img/background/catbag-tablet.jpg");
+    text-align: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/icons/icon_gift.svg"),
+        url("../img/background/catbag-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @breakpoint-large) {
+    padding: 186px 40px 41px;
+    background-position: 50% 53px, 50% 50%;
+    background-image:
+      url("../img/icons/icon_gift.svg"),
+      url("../img/background/catbag-desktop.jpg");
+    text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/icons/icon_gift.svg"),
+        url("../img/background/catbag-desktop@2x.jpg");
+    }
+  }
+}
+
+.offer__text {
+  margin: 0;
+}

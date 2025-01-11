@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cat Energy</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body class="page__body">
+
+    <header class="page__header page-header">
+      <nav class="page-header__nav page-header__nav--main">
+        <div class="page-header__bar">
+          <a class="page-header__logo logo">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="./img/logo-image-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo-image-tablet.svg" >
+              <img class="logo__image" src="./img/logo-image-mobile.svg" width="34" height="38" alt="Логотип изображение.">
+            </picture>
+            <img class="logo__sign" src="./img/logo-sign.svg" width="101" height="19" alt="Логотип Cat Energy.">
+          </a>
+          <button class="page-header__toggler" type="button">
+            <span class="visually-hidden">Открыть меню  и что - то новое для проверки</span>
+          </button>
+        </div>
+
+        <ul class="page-header__menu site-menu site-menu--main">
+          <li class="site-menu__item  site-menu__item--active">
+            <a class="site-menu__link">Главная</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__main page-main">
+      <header class="page-main__header page-main__header--index promo">
+        <div class="promo__container container">
+          <h1 class="promo__heading">Функциональное питание для котов</h1>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+          <picture>
+            <source media="(min-width: 1300px)" type="image/webp" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp"  srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+            <img class="promo__image"  src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x"  width="280" height="270" alt="Баночка с кормом Cat Energy с курицей, 500 грамм.">
+          </picture>
+          <a class="promo__button button button--promo"  href="form.html">Подобрать программу</a>
+        </div>
+      </header>
+
+      <section class="page-main__section catalog-sections">
+        <div class="catalog-sections__container container">
+          <h2 class="visually-hidden">Разделы каталога</h2>
+
+          <article class="catalog-sections__item">
+            <h3 class="catalog-sections__heading catalog-sections__heading--slim">Похудение</h3>
+            <p class="catalog-sections__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="catalog-sections__link" href="catalog.html">Каталог Slim</a>
+          </article>
+
+          <article class="catalog-sections__item">
+            <h3 class="catalog-sections__heading catalog-sections__heading--pro">Набор массы</h3>
+            <p class="catalog-sections__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="catalog-sections__link" href="catalog.html">Каталог Pro</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-main__section process">
+        <div class="process__container container">
+          <h2 class="page-main__heading">Как это работает</h2>
+
+          <ol class="process__list">
+            <li class="process__item process__item--leaf">
+              Функциональное питание содержит только полезные питательные вещества.
+            </li>
+            <li class="process__item process__item--powder">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </li>
+            <li class="process__item process__item--meal">
+              Замените один-два приема обычной еды на наше функциональное питание.
+            </li>
+            <li class="process__item process__item--weight">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="page-main__section example">
+        <div class="example__container container">
+          <div class="example__content">
+            <h2 class="page-main__heading example__heading">Живой пример</h2>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__title">cнижение веса</dt>
+                <dd class="example__result">5 кг</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__title">затрачено времени</dt>
+                <dd class="example__result">60 ДНЕЙ</dd>
+              </div>
+            </dl>
+
+            <p class="example__costs">
+              <span>Затраты на питание:</span>
+              <span>15&nbsp;000&nbsp;руб.</span>
+            </p>
+          </div>
+
+          <div class="example__view">
+            <div class="example__images">
+              <div class="example__image example__image--before">
+                <picture>
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/cat-fat-before-tablet.webp 1x, img/cat-fat-before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-fat-before-mobile.webp 1x, img/cat-fat-before-mobile@2x.webp 2x">
+
+
+                  <source media="(min-width: 768px)" srcset="img/cat-fat-before-tablet.png 1x, img/cat-fat-before-tablet@2x.png 2x">
+                  <img src="img/cat-fat-before-mobile.png" srcset="img/cat-fat-before-mobile@2x.png 2x" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным.">
+                </picture>
+              </div>
+              <div class="example__image example__image--after example__image--active">
+                <picture>
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/cat-skinny-after-tablet.webp 1x, img/cat-skinny-after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-skinny-after-mobile.webp 1x, img/cat-skinny-after-mobile@2x.webp 2x">
+
+
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny-after-tablet.png 1x, img/cat-skinny-after-tablet@2x.png 2x">
+                  <img class="example__image--mobile" src="img/cat-skinny-after-mobile.png" srcset="img/cat-skinny-after-mobile@2x.png 2x" width="243" height="232"alt="Кот после употребления корма: выглядит молодым, худым и бодрым.">
+                </picture>
+              </div>
+            </div>
+
+            <div class="example__switch switch switch--before">
+              <button class="switch__button" type="button">было</button>
+              <div class="switch__toggler"></div>
+              <input class="switch__bar" type="range" value="50" min="17" max="83">
+              <button class="switch__button" type="button">стало</button>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      <footer class="page-main__footer contacts contacts--main">
+        <h2 class="visually-hidden">Контакты</h2>
+
+        <div class="contacts__container">
+          <p class="contacts__heading">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+
+        <picture>
+          <source srcset="img/map_mobile.png" type="image/png" media="(max-width: 767px)">
+          <source srcset="img/map_tablet.png" type="image/png" media="(max-width: 1219px)">
+          <source srcset="img/map_desktop.png" type="image/png" media="(min-width: 1220px)">
+          <img class="contacts__map" src="img/map_mobile.png" width="320" height="362" alt="Google карта с расположением нашего шоурума.">
+        </picture>
+
+      </footer>
+    </main>
+
+    <footer class="page__footer page-footer">
+      <div class="page-footer__container container">
+        <a class="page-footer__logo logo logo--footer">
+          <img class="logo__image"  src="img/logo-sign.svg" width="128" height="24" alt="Логотип Cat Energy.">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item social-vk">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">vkontakte</span>
+              <svg width="30" height="22" viewBox="0 0 30 22">
+                <use xlink:href="./img/sprite.svg#icon_vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social-insta" href="#">
+              <span class="visually-hidden">instagram</span>
+              <svg width="23" height="23" viewBox="0 0 23 23">
+                <use xlink:href="./img/sprite.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social-facebook" href="#">
+              <span class="visually-hidden">facebook</span>
+              <svg width="28" height="33" viewBox="0 0 28 33">
+                <use xlink:href="./img/sprite.svg#icon_facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Разработано в </span>HTML Academy
+          <svg class="developer__image" width="27" height="34" viewBox="0 0 27 34">
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+          </svg>
+
+          <p class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация</p>
+        </a>
+      </div>
+    </footer>
+    <script src="./js/app.min.js"></script>
+  </body>
+</html>
