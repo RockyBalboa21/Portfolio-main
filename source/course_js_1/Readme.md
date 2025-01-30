@@ -35,6 +35,8 @@
 ### Обзор проекта
 <a href="https://rockybalboa21.github.io/Portfolio-main/source/course_js_1/index.html" target="_blank">«Keksogram»</a>
 
+<img src="./img/kekstagram.png" />
+
 ---
 
 <a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png"></a>
