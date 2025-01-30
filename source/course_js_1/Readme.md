@@ -33,7 +33,7 @@
 ---
 
 ### Обзор проекта
-<a href=./index.html" target="_blank">«Keksogram»</a>
+<a href="https://rockybalboa21.github.io/Portfolio-main/source/course_js_1/index.html" target="_blank">«Keksogram»</a>
 
 ---
 
