@@ -35,6 +35,15 @@
 ### Обзор проекта
 <a href="https://rockybalboa21.github.io/Cat_Energy_html2/" target="_blank">«Cat Energy»</a>
 
+#### Главная страница
+<img src="./layout Cat Energy/Desktop главная.png" />
+
+#### Страница каталога
+<img src="./layout Cat Energy/Desktop каталог.png" />
+
+#### Страница формы
+<img src="./layout Cat Energy/Desktop форма.png" />
+
 ---
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
