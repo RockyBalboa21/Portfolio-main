@@ -4,7 +4,8 @@ This repository contains a collection of projects created by me
 
 All news [here](https://rockybalboa21.github.io/Portfolio-main/).
 
-![ViewCount](https://img.shields.io/badge/dynamic/json?color=green&label=views&query=value&url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2FRockyBalboa21.Portfolio-main%2Fvisits)
+<img src="https://komarev.com/ghpvc/?username=RockyBalboa21&repo=Portfolio-main&style=flat-square&color=blue" alt=""/>
+
 
 
 
