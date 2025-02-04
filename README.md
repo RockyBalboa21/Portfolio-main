@@ -18,7 +18,7 @@ I am a beginner Frontend Developer <img src="https://media.giphy.com/media/8zldD
 - :zap: In my free time, I solve problems on <a href="https://www.codewars.com/users/RockyBalboa_21">CodeWars</a> and read tech articles. <img src="https://www.codewars.com/users/RockyBalboa_21/badges/large" alt="CodeWars Badge" />
 
 <div align="center">
-  <img src="./img/readme-image.png" alt="My Image" width="800" height="800">
+  <img src="./img/readme-image.png" alt="My Image" style="width: 80%; height: auto;">
 </div>
 
 ---
