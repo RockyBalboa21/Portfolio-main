@@ -1,4 +1,4 @@
-# 🚀 Portfolio :file_folder:
+# <div align="center">🚀 Portfolio :file_folder:</div>
 
 This repository contains a collection of projects created by me
 
@@ -6,25 +6,24 @@ All news :point_right: [here](https://rockybalboa21.github.io/Portfolio-main/).
 
 <img src="https://komarev.com/ghpvc/?username=RockyBalboa21&repo=Portfolio-main&style=plastic&color=brightgreen" alt=""/>
 
-<div align="center">
-  <img src="./img/readmi-image.png" alt="My Image" width="600" height="400">
-</div>
-
 ---
 
-### :man_technologist: About Me :
-I am a beginner Frontend Developer <img src="https://media.giphy.com/media/8zldD29JNeLRK/giphy.gif" width="40"> from the Republic of Belarus. :by:
+### <div align="center">👨‍💻 About Me :</div>
+I am a beginner Frontend Developer <img src="https://media.giphy.com/media/8zldD29JNeLRK/giphy.gif" width="40"> from the Republic of Belarus.
 - :man_student: I'm studying to be a Frontend Developer.
 - :writing_hand: I learn HTML, CSS, SCSS, JavaScript, TypeScript, React.
 - :rocket: Currently working on a personal project to build a responsive portfolio website.
 
 - :goal_net: My goal is to become a proficient full-stack developer and contribute to exciting projects.
-- :zap: In my free time, I solve problems on <a href="https://www.codewars.com/users/RockyBalboa_21">CodeWars</a> and read tech articles.
-<img src="https://www.codewars.com/users/RockyBalboa_21/badges/large" alt="CodeWars Badge" />
+- :zap: In my free time, I solve problems on <a href="https://www.codewars.com/users/RockyBalboa_21">CodeWars</a> and read tech articles. <img src="https://www.codewars.com/users/RockyBalboa_21/badges/large" alt="CodeWars Badge" />
+
+<div align="center">
+  <img src="./img/readme-image.png" alt="My Image" width="600" height="400">
+</div>
 
 ---
 
-### :hammer_and_wrench: Languages and Tools :
+### <div align="center">:hammer_and_wrench: Languages and Tools :</div>
 <div align="center">
   <img src="https://github.com/RockyBalboa21/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
   <img src="https://github.com/RockyBalboa21/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
@@ -45,12 +44,19 @@ I am a beginner Frontend Developer <img src="https://media.giphy.com/media/8zldD
 
 ---
 
-### :fire: My Stats :
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=RockyBalboa21&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
+### <div align="center">:fire: My Stats :</div>
+
+<div align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RockyBalboa21&layout=compact&theme=vision-friendly-dark" alt="Top Langs"/>
+  </a>
+</div>
+
+
 
 ---
 
-### :art: Interesting Facts:
+### <div align="center">:art: Interesting Facts:</div>
 :video_game: I enjoy playing sports, strategy, and adventure games on PlayStation. Gaming is not only a hobby but also a great way for me to relax and stay connected with friends.
 
 :biking_man: Outdoor activities, especially hiking, cycling, and swimming, are my favorite ways to relieve stress.
@@ -59,16 +65,32 @@ I am a beginner Frontend Developer <img src="https://media.giphy.com/media/8zldD
 
 ---
 
-## :globe_with_meridians: Connect with me :
+## <div align="center">:globe_with_meridians: Connect with me :</div>
 
-<a href="mailto:aliaxandr.gerasimau@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-red?logo=gmail&logoColor=white&style=flat-square" alt="Gmail Badge"/>
-</a>
-<a href="https://t.me/Alex_Telegram_groomer">
-  <img src="https://img.shields.io/badge/Telegram-blue?logo=telegram&logoColor=white&style=flat-square" alt="Telegram Badge"/>
-</a>
-<a href="https://vk.com/alexandr_gerasimau">
-  <img src="https://img.shields.io/badge/%D0%92%D0%9A%D0%9E%D0%9D%D0%A2%D0%90%D0%9A%D0%A2%D0%95-blue?logo=vk&logoColor=white&style=flat-square" alt="VK Badge"/>
-</a>
+<div align="center" style="display: flex; justify-content: center;">
+  <div>
+    <a href="mailto:aliaxandr.gerasimau@gmail.com">
+      <img src="https://img.shields.io/badge/Gmail-red?logo=gmail&logoColor=white&style=flat-square" alt="Gmail Badge"/>
+    </a>
+  </div>
+  <div>
+    <a href="https://t.me/Alex_Telegram_groomer">
+      <img src="https://img.shields.io/badge/Telegram-blue?logo=telegram&logoColor=white&style=flat-square" alt="Telegram Badge"/>
+    </a>
+  </div>
+  <div>
+    <a href="https://vk.com/alexandr_gerasimau">
+      <img src="https://img.shields.io/badge/%D0%92%D0%9A%D0%9E%D0%9D%D0%A2%D0%90%D0%9A%D0%A2%D0%95-blue?logo=vk&logoColor=white&style=flat-square" alt="VK Badge"/>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 
 
