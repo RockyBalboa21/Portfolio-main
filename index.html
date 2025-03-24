@@ -9,6 +9,7 @@
 		<link rel="icon" href="favicon-a.ico" type="image/x-icon">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="style-popup.css">
+		<link rel="stylesheet" href="style-card.css">
 		<title>Портфолио Герасимов Александр</title>
 	</head>
 
@@ -17,13 +18,16 @@
 			<header class="page-header">
 				<div class="container-header">
 					<p class="dev">Front-End Developer</p>
-					<button class="theme-button" type="button">Изменить тему</button>
+					<div class="wrapper-switch">
+						<input type="checkbox" name="checkbox" class="switch">
+					</div>
 					<div class="contacts">
 						<a class="header-email" href="mailto:aliaxandr.gerasimau@gmail.com">aliaxandr.gerasimau@gmail.com</a>
 						<a class="header-phone" href="tel:+375293096030">+375 29 309 60 30</a>
 					</div>
 				</div>
 			</header>
+
 
 			<main class="main">
 				<section class="hero-image">
@@ -35,17 +39,34 @@
 				<section class="intro">
 					<div class="container">
 						<h2 class="subheading">Давайте познакомимся</h2>
-						<div class="family">
-							<figure class="user-image">
-								<img src="files/family.png" width="430" height="500" alt="Фотография меня с моей семьёй">
-								<figcaption class="user">
-								Это я, <b>Александр</b> и моя семья: <br>жена <b>Виктория &#128151;</b>, сын <b>Владислав &#128153;</b>, дочь <b>Анна &#128157;</b>
-								</figcaption>
-							</figure>
+						<p class="user">
+							Это я, <b>Александр</b> и моя семья: <br>жена <b>Виктория &#128151;</b>, сын <b>Владислав &#128153;</b>, дочь
+							<b>Анна &#128157;</b>
+						</p>
+						<div class="card-wrapper">
+							<div class="card">
+								<div class="card-side card-front"></div>
+								<div class="card-side card-back"></div>
+							</div>
 						</div>
 
-						<h3>Чем могу быть полезен</h3>
-						<p>Могу верстать, могу не верстать, могу заставить верстать других.</p>
+						<div class="about-me">
+							<h3>Чем могу быть полезен:</h3>
+							<ul>
+								<li>
+									<h4>Могу верстать:</h4>
+									<p>Создаю адаптивные, кроссбраузерные и современные интерфейсы. HTML, CSS, JavaScript — мои лучшие друзья. Работая с кодом, я уделяю внимание каждому пикселю.</p>
+								</li>
+								<li>
+									<h4>Могу не верстать:</h4>
+									<p>Готов помочь команде, будь то советы, ревью кода или поиск оптимального подхода к задаче. Важна командная работа и общая цель.</p>
+								</li>
+								<li>
+									<h4>Могу заставить верстать других:</h4>
+									<p>Руководить процессами, делегировать задачи, вдохновлять команду на лучшие решения — это для меня не задача, а удовольствие.</p>
+								</li>
+							</ul>
+						</div>
 
 						<div class="skills">
 							<h2 class="subheading">Мои навыки</h3>
@@ -208,26 +229,46 @@
 							<div class="gallery-item gallery-item-big">
 								<img src="img/gallery/premium-cars-rental.jpg" width="500" height="500" alt="Cайт аренды автомобилей.">
 							</div>
-							<div class="gallery-item">
+							<div class="gallery-item course">
 								<img src="img/gallery/course_html_1_sedona.jpg" width="500" height="500" alt="Cайт гостиниц в Седоне.">
+								<div class="description">
+									<p>Сourse HTML 1.</p>
+								</div>
 							</div>
-							<div class="gallery-item">
-								<img src="img/gallery/course_html_1_sedona_catalog.jpg" width="500" height="500" alt="Cайт гостиниц в Седоне каталог.">
+							<div class="gallery-item course">
+								<img src="img/gallery/course_html_1_sedona_catalog.jpg" width="500" height="500"
+									alt="Cайт гостиниц в Седоне каталог.">
+								<div class="description">
+									<p>Сourse HTML 1.</p>
+								</div>
 							</div>
-
-							<div class="gallery-item gallery-item-big">
+							<div class="gallery-item gallery-item-big course">
 								<img src="img/gallery/cat-energy.jpg" width="500" height="500" alt="Cайт Функциональное питание для котов.">
 								<a class="gallery-item__button button-show" href="popup_cat_energy.html">Показать подробности</a>
+								<div class="description">
+									<p>Сourse HTML 2.</p>
+								</div>
 							</div>
-							<div class="gallery-item gallery-item-big">
+							<div class="gallery-item gallery-item-big course">
 								<img src="img/gallery/kekstagram.png" width="500" height="500" alt="Cайт Кекстаграм.">
 								<a class="gallery-item__button" href="source/course_js_1/img/Техническое задание проект Кекстаграм 1.png">Показать подробности</a>
+								<div class="description">
+									<p>Сourse JS 1.</p>
+								</div>
 							</div>
-							<div class="gallery-item">
-								<img src="img/gallery-picture/course_react_farm_products.png" width="500" height="500" alt="Cайт фермерские продукты.">
+							<div class="gallery-item course">
+								<img src="img/gallery-picture/course_react_farm_products.png" width="500" height="500"
+									alt="Cайт фермерские продукты.">
+								<div class="description">
+									<p>Сourse REACT.</p>
+								</div>
 							</div>
-							<div class="gallery-item">
-								<img src="img/gallery-picture/course_react_farm_products_basket.png" width="500" height="500" alt="Cайт фермерские продукты страница заказа.">
+							<div class="gallery-item course">
+								<img src="img/gallery-picture/course_react_farm_products_basket.png" width="500" height="500"
+									alt="Cайт фермерские продукты страница заказа.">
+								<div class="description">
+									<p>Сourse REACT.</p>
+								</div>
 							</div>
 						</div>
 					</div>

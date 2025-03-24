@@ -1,0 +1,44 @@
+.card-wrapper {
+    position: relative;
+    min-width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .card-wrapper {
+        min-width: 300px;
+        height: 400px;
+    }
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-100%);
+    opacity: 0.8;
+}
+
+.card-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-front {
+    background-image: url('/files/family.png');
+    top: 0;
+}
+
+.card-back {
+    background-image: url('/files/photo-family_2.jpg');
+    top: 100%;
+}
