@@ -47,6 +47,7 @@
 }
 
 .page-header {
+  width: 100%;
   grid-area: page-header;
   margin: 0 0 160px 0;
   padding: 18px 0px;
@@ -54,6 +55,7 @@
   top: 0;
   z-index: 1;
   background: #adf3f8a2;
+  transition: top 0.3s ease-in-out;
 }
 
 .dev {
