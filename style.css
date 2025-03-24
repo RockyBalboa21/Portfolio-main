@@ -630,6 +630,51 @@ div[class^="effect-"] {
 	left: 0;
 }
 
+.gallery-item .course {
+  background-color: #ffffff;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item .course img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.course:hover img {
+  transform: scale(0.9);
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: opacity 0.5s ease,
+  visibility 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.course:hover .description {
+  opacity: 1;
+  visibility: visible;
+}
+
+.description p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 @media (min-width: 800px) {
 	.gallery-item-big {
 		grid-column: span 2;
