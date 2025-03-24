@@ -34,11 +34,11 @@
 }
 
 .card-front {
-    background-image: url('/files/family.png');
+    background-image: url('files/family.png');
     top: 0;
 }
 
 .card-back {
-    background-image: url('/files/photo-family_2.jpg');
+    background-image: url('files/photo-family_2.jpg');
     top: 100%;
 }
