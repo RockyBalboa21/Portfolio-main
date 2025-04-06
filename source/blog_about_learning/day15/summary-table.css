@@ -15,7 +15,7 @@ body {
     font-family: "Verdana", sans-serif;
     text-align: center;
   }
-  
+
   .blog-navigation {
     margin-bottom: 30px;
     padding: 10px;
@@ -29,7 +29,7 @@ body {
   .blog-navigation a[href] {
     color: white;
   }
-  
+
   article {
     display: flex;
     justify-content: space-around;
@@ -49,23 +49,23 @@ body {
     font-size: 20px;
     line-height: normal;
   }
-  
+
   aside {
     margin: 20px 0;
     color: #c4c4c4;
   }
-  
+
   a[href] {
     color: #0099ef;
     text-decoration-line: underline;
   }
-  
+
   figure {
     width: 350px;
     margin-left: 0;
     margin-right: 0;
   }
-  
+
   figure table {
     vertical-align: middle;
     border: 8px solid rgb(202, 224, 248);
@@ -80,7 +80,7 @@ body {
     text-align: center;
     background-color: rgb(202, 224, 248);
   }
-  
+
   .pagination a {
     display: inline-block;
     margin-right: 30px;
@@ -90,7 +90,7 @@ body {
   .pagination a:last-child {
     margin-right: 0;
   }
-  
+
   .pagination {
     text-align: center;
   }
@@ -104,18 +104,18 @@ body {
     border-bottom: 1px;
     border-spacing: 5px;
   }
-  
+
   .simple_table_caption {
     caption-side: bottom;
     text-align: center;
     padding-top: 10px;
   }
-  
+
   .simple_table_date {
     border: 1px solid lightgray;
     padding: 10px;
   }
-  
+
   .simple_table_head {
     padding: 10px;
     border: 2px solid black;
@@ -123,44 +123,44 @@ body {
 
   table {
     width: 100%;
-    border-collapse: collapse;  
+    border-collapse: collapse;
   }
-  
+
   .col-1 {
-   text-align: left;
+    text-align: left;
   }
-  
+
   .col-2 {
-   text-align: center;
+    text-align: center;
   }
-  
+
   .col-3 {
-   text-align: right;
+    text-align: right;
   }
-  
+
   .row-heading {
-   background-color: darkcyan; 
-   color: white;
+    background-color: darkcyan;
+    color: white;
   }
-  
+
   .cell-highlight {
     background-color: lightblue;
   }
-  
+
   th, td {
-   padding: 10px;
+    padding: 10px;
   }
-  
-  td { 
-   border: 1px solid lightgray;
+
+  td {
+    border: 1px solid lightgray;
   }
-  
+
   th {
-   width: 33%;
-   border-bottom: 2px solid black;
-   border-top: 2px solid black;
+    width: 33%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
   }
-  
+
   .row-highlight {
     background-color: lightyellow;
   }
